@@ -1,0 +1,505 @@
+Symbol,Name,Last,Sector,Industry,Time,"YTD %Chg","10Y %Chg",Beta,"Market Cap",Sales(a),"Net Income(a)","Earnings ttm","Div Yield","52W %Chg"
+A,"Agilent Technologies",133.85,"Computers and Technology","Electronic Test Equipment",2023-03-29,-10.56%,+342.42%,1.04,39218956000,6848000000,1254000000,5.37,0.68%,-1.16%
+AAL,"American Airlines Gp",14.35,Transportation,"Transportation - Airline",2023-03-29,+12.81%,-17.62%,1.55,9107006000,48971000000,127000000,0.3,0.00%,-17.05%
+AAP,"Advance Auto Parts Inc",117.55,Retail-Wholesale,"Retail - Wholesale Auto Parts",2023-03-29,-20.05%,+40.04%,1.12,6860371000,11154720000,501870000,13.03,5.18%,-44.15%
+AAPL,"Apple Inc",160.77,"Computers and Technology","Computer - Mini",2023-03-29,+23.74%,+897.20%,1.3,2494329760000,394328000000,99803000000,5.89,0.58%,-8.45%
+ABBV,"Abbvie Inc",158,Medical,"Large Cap Pharma",2023-03-29,-2.23%,+288.06%,0.62,279175456000,58054000000,11836000000,13.93,3.74%,-2.45%
+ABC,"Amerisourcebergen Corp",158.97,Medical,"Medical - Dental Suppliers",2023-03-29,-4.07%,+207.09%,0.54,31956762000,238587000000,1698820000,11.15,1.23%,+2.74%
+ABT,"Abbott Laboratories",98.62,Medical,"Medical Products",2023-03-29,-10.17%,+174.94%,0.68,168771936000,43653000000,6933000000,5.34,2.10%,-17.81%
+ACGL,"Arch Capital Grp Ltd",67.8,Finance,"Insurance - Proprty & Casualty",2023-03-29,+8.00%,+281.26%,0.74,24888060000,9614810000,1476930000,4.86,0.00%,+42.44%
+ACN,"Accenture Plc",279.94,"Business Services",Consulting,2023-03-29,+4.91%,+261.98%,1.25,173315712000,61594300000,6877170000,11.16,1.63%,-15.36%
+ADBE,"Adobe Systems Inc",379.16,"Computers and Technology","Computer - Software",2023-03-29,+12.67%,+758.19%,1.27,171232288000,17606000000,4756000000,11.08,0.00%,-15.74%
+ADI,"Analog Devices",189.17,"Computers and Technology","Semi Analog & Mixed",2023-03-29,+15.33%,+294.92%,1.14,92874608000,12013950000,2748560000,10.4,1.87%,+13.10%
+ADM,"Archer Daniels Midland",78.99,"Consumer Staples","Agriculture Operations",2023-03-29,-14.93%,+132.88%,0.79,42923256000,101556000000,4340000000,7.84,2.29%,-14.47%
+ADP,"Automatic Data Procs",219.9,"Business Services",Outsourcing,2023-03-29,-7.94%,+275.41%,0.81,88733480000,16498300000,2948900000,7.53,2.33%,-0.34%
+ADSK,"Autodesk Inc",199.16,"Computers and Technology","Computer - Software",2023-03-29,+6.58%,+378.23%,1.51,42370244000,5005000000,823000000,4.2,0.00%,-7.54%
+AEE,"Ameren Corp",86.01,Utilities,"Utility - Electric Power",2023-03-29,-3.27%,+141.49%,0.41,22159792000,7957000000,1074000000,4.14,2.98%,-6.31%
+AEP,"American Electric Power Company",90.1,Utilities,"Utility - Electric Power",2023-03-29,-5.11%,+82.87%,0.44,45746216000,19639500000,2307200000,5.09,3.73%,-7.69%
+AES,"The Aes Corp",23.46,Utilities,"Utility - Electric Power",2023-03-29,-18.43%,+82.42%,0.94,15340881000,12617000000,-546000000,1.67,2.89%,-4.83%
+AFL,"Aflac Inc",64.29,Finance,"Insurance - Accident & Health",2023-03-29,-10.63%,+144.37%,0.94,38880164000,19502000000,4201000000,5.4,2.64%,-1.52%
+AIG,"American International Group",48.7,Finance,"Insurance - Multi Line",2023-03-29,-22.99%,+22.36%,1.15,35019232000,56437000000,10276000000,4.51,2.69%,-23.58%
+AIZ,"Assurant Inc",118.2,Finance,"Insurance - Multi Line",2023-03-29,-5.49%,+158.05%,0.54,6146657000,10193000000,276600000,10.94,2.41%,-35.65%
+AJG,"Arthur J. Gallagher & Company",189,Finance,"Insurance - Brokers",2023-03-29,+0.24%,+351.51%,0.69,39559772000,8550600000,1114200000,7.77,1.18%,+10.96%
+AKAM,"Akamai Technologies",76.73,"Computers and Technology","Internet - Services",2023-03-29,-8.98%,+116.82%,0.78,11967616000,3616650000,523670000,4.05,0.00%,-35.76%
+ALB,"Albemarle Corp",224.46,"Basic Materials","Chemical - Diversified",2023-03-29,+3.50%,+248.94%,1.57,25589950000,7320100000,2689820000,21.95,0.73%,+4.72%
+ALGN,"Align Technology",306.21,Medical,"Medical - Dental Suppliers",2023-03-29,+45.19%,+811.04%,1.6,23388268000,3734640000,361570000,5.53,0.00%,-29.44%
+ALK,"Alaska Air Group",40.63,Transportation,"Transportation - Airline",2023-03-29,-5.38%,+24.48%,1.54,5074381000,9646000000,58000000,4.31,0.00%,-28.96%
+ALL,"Allstate Corp",109.7,Finance,"Insurance - Proprty & Casualty",2023-03-29,-19.10%,+116.71%,0.59,28002510000,51412000000,-1311000000,-1.1,3.35%,-21.98%
+ALLE,"Allegion Plc",105.4,"Industrial Products","Protection - Safety",2023-03-29,+0.13%,N/A,1.1,9157498000,3271900000,458000000,5.68,1.73%,-7.12%
+AMAT,"Applied Materials",119.85,"Computers and Technology","Semi-Eqpt Wafer Fabrication",2023-03-29,+23.07%,+763.50%,1.61,98371728000,25785000000,6525000000,7.85,0.89%,-12.94%
+AMCR,"Amcor Plc",11.11,"Industrial Products","Containers - Paper Products",2023-03-29,-6.72%,+13.01%,0.81,16388154000,14544000000,805000000,0.82,4.44%,-2.11%
+AMD,"Adv Micro Devices",96.09,"Computers and Technology","Electronics - Semiconductors",2023-03-29,+48.36%,"+3,608.24%",1.95,152372832000,23601000000,1320000000,3.01,0.00%,-20.08%
+AME,"Ametek Inc",142.24,"Computers and Technology","Electronic Test Equipment",2023-03-29,+1.80%,+225.51%,1.22,32501860000,6150530000,1159540000,5.68,0.71%,+6.41%
+AMGN,"Amgen Inc",241.03,Medical,"Medical - Biomedical",2023-03-29,-8.23%,+132.64%,0.65,127342600000,26323000000,6552000000,17.69,3.57%,+0.23%
+AMP,"Ameriprise Financial Services",301.64,Finance,"Finance - Investment Mgmt",2023-03-29,-3.12%,+306.45%,1.49,31476056000,14271000000,2559000000,25.16,1.67%,-3.04%
+AMT,"American Tower Corp",198.49,Finance,"REIT - Equity Trust Other",2023-03-29,-6.31%,+150.74%,0.56,89809136000,10711100000,1765800000,3.84,3.24%,-18.99%
+AMZN,"Amazon.com Inc",100.25,Retail-Wholesale,"Internet Commerce",2023-03-29,+19.35%,+629.78%,1.25,996443520000,513983000000,-2722000000,0.72,0.00%,-40.68%
+ANET,"Arista Networks Inc",162.5,"Computers and Technology","Communications Components",2023-03-29,+33.91%,N/A,1.24,49942384000,4381310000,1352450000,4.14,0.00%,+16.58%
+ANSS,"Ansys Inc",320.07,"Computers and Technology","Computer - Software",2023-03-29,+32.48%,+290.21%,1.24,27668090000,2065550000,523710000,6.37,0.00%,+0.52%
+AON,"AON Plc",312.69,Finance,"Insurance - Brokers",2023-03-29,+4.18%,+402.44%,0.89,63388876000,12479000000,2589000000,13.37,0.72%,-4.15%
+AOS,"Smith A.O. Corp",68.92,"Industrial Products","Machinery - Electrical",2023-03-29,+20.41%,+270.53%,1.27,10282403000,3753900000,235700000,3.14,1.76%,+3.39%
+APA,"Apa Corp",35.91,Oils-Energy,"Oil - US Exploration & Product",2023-03-29,-23.07%,-53.47%,3.52,11163214000,12132000000,3674000000,7.74,2.79%,-9.89%
+APD,"Air Products and Chemicals",276.33,"Basic Materials","Chemical - Diversified",2023-03-29,-10.36%,+213.98%,0.84,60748584000,12698600000,2256100000,10.53,2.37%,+11.28%
+APH,"Amphenol Corp",79.81,"Computers and Technology","Electronics - Connectors",2023-03-29,+4.82%,+318.43%,1.24,46432700000,12623000000,1902300000,3,1.08%,+5.28%
+APTV,"Aptiv Plc",109.56,"Business Services","Technology Services",2023-03-29,+17.64%,+189.41%,2.04,29267656000,17489000000,594000000,3.4,0.00%,-7.82%
+ARE,"Alexandria Real Estate Equities",123.03,Finance,"REIT - Equity Trust Other",2023-03-29,-15.54%,+66.93%,0.95,20509078000,2588960000,521660000,3.57,4.08%,-37.45%
+ATO,"Atmos Energy Corp",111.53,Utilities,"Utility - Gas Distribution",2023-03-29,-0.48%,+157.81%,0.61,15756519000,4201660000,774400000,5.71,2.69%,-5.31%
+ATVI,"Activision Blizzard",84.54,"Consumer Discretionary","Toys & Game & Hobby",2023-03-29,+10.44%,+478.93%,0.42,66153512000,7528000000,1513000000,2.95,0.56%,+5.66%
+AVB,"Avalonbay Communities",162.2,Finance,"REIT - Equity Trust Resident",2023-03-29,+0.42%,+24.20%,0.9,22012212000,2593450000,1136780000,8.11,4.04%,-35.12%
+AVGO,"Broadcom Ltd",625.5,"Computers and Technology","Electronics - Semiconductors",2023-03-29,+11.87%,"+1,640.11%",1.1,260452448000,33203000000,11495000000,37.04,2.95%,-1.17%
+AVY,"Avery Dennison Corp",173.18,"Industrial Products","Office Supply & Forms",2023-03-29,-4.32%,+300.67%,0.98,13996981000,9039300000,757100000,9.15,1.74%,-0.18%
+AWK,"American Water Works",144.14,Utilities,"Utility - Water Supply",2023-03-29,-5.43%,+240.78%,0.56,25697380000,3792000000,820000000,4.51,1.86%,-10.70%
+AXP,"American Express Company",163.59,Finance,"Finance - Misc Services",2023-03-29,+10.72%,+136.01%,1.2,118462752000,55625000000,7514000000,9.84,1.31%,-13.76%
+AZO,Autozone,2395.37,Retail-Wholesale,"Retail - Wholesale Auto Parts",2023-03-29,-2.87%,+506.20%,0.69,44251240000,16252230000,2429600000,121.63,0.00%,+18.61%
+BA,"Boeing Company",207.97,Aerospace,"Aerospace - Defense",2023-03-29,+9.18%,+138.74%,1.43,122807320000,66608000000,-4935000000,-11.05,0.00%,+10.53%
+BAC,"Bank of America Corp",28.67,Finance,"Banks - Major Regional",2023-03-29,-13.44%,+130.87%,1.4,225067968000,115053000000,27528000000,3.19,3.13%,-34.17%
+BALL,"Ball Corporation",53.9,"Industrial Products","Containers - Metal & Glass",2023-03-29,+5.40%,+124.04%,0.78,16757252000,15349000000,719000000,2.78,1.50%,-42.22%
+BAX,"Baxter International Inc",40.54,Medical,"Medical Products",2023-03-29,-20.46%,+0.94%,0.55,20145092000,15113000000,-2433000000,3.5,2.91%,-48.63%
+BBWI,"Bath & Body Works Inc",37.25,Retail-Wholesale,"Retail - Misc & Diversified",2023-03-29,-11.60%,+5.41%,1.77,8702259000,7560000000,800000000,3.42,2.10%,-25.31%
+BBY,"Best Buy Company",74.86,Retail-Wholesale,"Retail - Consumer Electronics",2023-03-29,-6.67%,+231.02%,1.51,15987132000,46298000000,1419000000,7.1,5.02%,-22.61%
+BDX,"Becton Dickinson and Company",242.93,Medical,"Medical - Dental Suppliers",2023-03-29,-4.47%,+152.31%,0.53,68485680000,18870000000,1779000000,11.57,1.51%,-9.40%
+BEN,"Franklin Resources",26.53,Finance,"Finance - Investment Mgmt",2023-03-29,+0.57%,-47.54%,1.27,13191804000,8275300000,1291900000,3.07,4.55%,-5.22%
+BF.B,"Brown Forman Inc Cl B",63.69,"Consumer Staples","Beverages - Alcohol",2023-03-29,-3.03%,+120.52%,0.7,30182598000,3933000000,838000000,1.77,1.31%,-4.71%
+BG,"Bunge Ltd",97,"Basic Materials","Agriculture Products",2023-03-29,-2.78%,+30.84%,0.66,14482851000,67232000000,1610000000,13.92,2.59%,-14.81%
+BIIB,"Biogen Inc",274.01,Medical,"Medical - Biomedical",2023-03-29,-1.05%,+52.32%,0.19,39047340000,10173400000,3046900000,17.69,0.00%,+29.45%
+BIO,"Bio-Rad Laboratories",471.97,Medical,"Medical Products",2023-03-29,+12.24%,+273.81%,0.93,13939716000,2802250000,-3627540000,14.23,0.00%,-17.79%
+BK,"Bank of New York Mellon Corp",45.06,Finance,"Banks - Major Regional",2023-03-29,-1.01%,+56.88%,1.11,35113776000,19991000000,2573000000,4.52,3.37%,-14.19%
+BKNG,"Booking Holdings Inc",2571.77,Retail-Wholesale,"Internet Commerce",2023-03-29,+27.61%,+269.84%,1.31,95818656000,17090000000,3058000000,100.75,0.00%,+12.95%
+BKR,"Baker Hughes Company",28.17,Oils-Energy,"Oil - Field Services",2023-03-29,-4.61%,-14.57%,1.46,27889392000,21156000000,-601000000,0.9,2.76%,-23.86%
+BLK,"Blackrock Inc",657.22,Finance,"Finance - Investment Mgmt",2023-03-29,-7.25%,+151.57%,1.28,97088512000,17873000000,5178000000,35.36,3.09%,-12.36%
+BMY,"Bristol-Myers Squibb Company",68.18,Medical,"Medical - Biomedical",2023-03-29,-5.24%,+65.57%,0.46,143445264000,46159000000,6327000000,7.7,3.34%,-6.74%
+BR,"Broadridge Financial Solutions Llc",142.98,"Business Services",Outsourcing,2023-03-29,+6.60%,+466.14%,0.97,16551168000,5709100000,539100000,6.33,2.06%,-7.41%
+BRK.B,"Berkshire Hathaway Cl B",305.3,Finance,"Insurance - Proprty & Casualty",2023-03-29,-1.17%,+190.13%,0.88,661280576000,302089000000,-22819000000,13.96,0.00%,-15.09%
+BRO,"Brown & Brown",56.42,Finance,"Insurance - Brokers",2023-03-29,-0.97%,+248.19%,0.75,15824674000,3573400000,671800000,2.29,0.82%,-21.76%
+BSX,"Boston Scientific Corp",49.08,Medical,"Medical Products",2023-03-29,+6.07%,+522.28%,0.79,69854144000,12682000000,698000000,1.71,0.00%,+10.87%
+BWA,"Borgwarner Inc",48.14,Auto-Tires-Trucks,"Auto - Truck Original Parts",2023-03-29,+19.60%,+23.27%,1.41,11144531000,15801000000,944000000,4.6,1.43%,+24.81%
+BXP,"Boston Properties",53.15,Finance,"REIT - Equity Trust Other",2023-03-29,-21.35%,-49.63%,1.08,7982290000,3108580000,848950000,5.4,7.70%,-59.04%
+C,"Citigroup Inc",45.95,Finance,"Banks - Major Regional",2023-03-29,+1.59%,+2.22%,1.59,87894656000,101078000000,14845000000,6.92,4.51%,-17.83%
+CAG,"Conagra Brands Inc",37.56,"Consumer Staples","Food - Misc & Diversified",2023-03-29,-2.95%,+33.77%,0.55,17768468000,11535900000,888200000,2.61,3.54%,+14.41%
+CAH,"Cardinal Health",74.6,Medical,"Medical - Dental Suppliers",2023-03-29,-2.95%,+74.12%,0.76,18671098000,181364000000,-933000000,5.02,2.74%,+29.07%
+CARR,"Carrier Global Corp",45.38,"Computers and Technology","Electronics Products - Misc",2023-03-29,+10.01%,N/A,1.33,37364056000,20421000000,3534000000,2.33,1.65%,-3.22%
+CAT,"Caterpillar Inc",223,"Industrial Products","Machinery - Construct & Mining",2023-03-29,-6.91%,+153.14%,1.11,113678736000,59427000000,6705000000,13.87,2.18%,+0.52%
+CB,"Chubb Ltd",193.26,Finance,"Insurance - Proprty & Casualty",2023-03-29,-12.39%,+113.06%,0.66,78384200000,43166000000,5313000000,15.24,1.75%,-11.01%
+CBOE,"CBOE Global Markets Inc",132.69,Finance,"Securities Exchanges",2023-03-29,+5.75%,+256.71%,0.49,13933754000,3958500000,235000000,6.94,1.52%,+17.49%
+CBRE,"CBRE Group Inc",69.41,Finance,"Real Estate Operations",2023-03-29,-9.81%,+171.09%,1.38,21212108000,30828250000,1407370000,5.68,0.00%,-22.62%
+CCI,"Crown Castle Inc",130.97,Finance,"REIT - Equity Trust Other",2023-03-29,-3.44%,+83.07%,0.65,55259008000,6986000000,1675000000,3.86,4.91%,-27.57%
+CCL,"Carnival Corp",9.89,"Consumer Discretionary","Leisure & Recreation Services",2023-03-29,+22.70%,-72.80%,2.22,10388759000,12168000000,-6094000000,-4.72,0.00%,-49.02%
+CDAY,"Ceridian Hcm Holding Inc",70.29,"Computers and Technology","Internet - Software",2023-03-29,+9.57%,N/A,1.45,10423098000,1246200000,-73400000,-0.17,0.00%,+3.19%
+CDNS,"Cadence Design Sys",206,"Computers and Technology","Computer - Software",2023-03-29,+28.24%,"+1,359.30%",1.07,55483244000,3561720000,848950000,3.34,0.00%,+26.79%
+CDW,"CDW Corp",188.3,"Computers and Technology","IT Services",2023-03-29,+5.44%,N/A,1.13,25195704000,23748700000,1114500000,9.35,1.27%,+6.20%
+CE,"Celanese Corp",105.92,"Basic Materials","Chemical - Specialty",2023-03-29,+3.60%,+134.51%,1.31,11205364000,9673000000,1894000000,15.91,2.71%,-26.35%
+CEG,"Constellation Energy Corp",75.88,Oils-Energy,"Other Alt Energy",2023-03-29,-11.98%,N/A,N/A,24732318000,24440000000,-160000000,-0.49,1.49%,+33.64%
+CF,"Cf Industries Holdings",72.3,"Basic Materials",Fertilizers,2023-03-29,-15.14%,+84.56%,1.05,13771091000,11186000000,3346000000,17.3,2.28%,-31.22%
+CFG,"Citizens Financial Group Inc/Ri",31.13,Finance,"Finance - Savings & Loan",2023-03-29,-20.93%,N/A,1.37,14882815000,9069000000,2073000000,4.76,5.47%,-34.72%
+CHD,"Church & Dwight Company",86.74,"Consumer Staples","Soap and Cleaning Products",2023-03-29,+7.60%,+167.37%,0.45,21086610000,5375600000,413900000,2.97,1.26%,-12.59%
+CHRW,"C.H. Robinson Ww",96.43,Transportation,"Transportation - Services",2023-03-29,+5.32%,+62.31%,0.79,11087938000,24696630000,940520000,7.53,2.53%,-12.44%
+CHTR,"Charter Communications Inc",349.71,"Consumer Discretionary","Cable TV",2023-03-29,+3.13%,+231.68%,1.12,52747032000,54022000000,5055000000,30.77,0.00%,-38.13%
+CI,"The Cigna Group",254.03,Finance,"Insurance - Multi Line",2023-03-29,-23.33%,+311.26%,0.67,76195888000,180516000000,6668000000,23.23,1.92%,+4.26%
+CINF,"Cincinnati Financial",110.73,Finance,"Insurance - Proprty & Casualty",2023-03-29,+8.15%,+128.78%,0.63,16979722000,6557000000,-486000000,4.23,2.78%,-18.44%
+CL,"Colgate-Palmolive Company",74.47,"Consumer Staples","Soap and Cleaning Products",2023-03-29,-5.48%,+26.24%,0.48,61863240000,17967000000,1785000000,2.97,2.52%,-1.22%
+CLX,"Clorox Company",155.5,"Consumer Staples","Soap and Cleaning Products",2023-03-29,+10.81%,+76.88%,0.29,19342780000,7107000000,462000000,4.15,3.01%,+12.17%
+CMA,"Comerica Inc",44.71,Finance,"Banks - Major Regional",2023-03-29,-33.12%,+18.94%,1.2,5623539000,3740000000,1151000000,8.47,6.64%,-53.00%
+CMCSA,"Comcast Corp A",36.95,"Consumer Discretionary","Cable TV",2023-03-29,+5.66%,+73.65%,1,153675248000,121427000000,5370000000,3.65,2.96%,-22.26%
+CME,"CME Group Inc",187.05,Finance,"Securities Exchanges",2023-03-29,+11.23%,+205.03%,0.41,67382752000,5019400000,2691000000,7.98,2.35%,-23.52%
+CMG,"Chipotle Mexican Grill",1656.72,Retail-Wholesale,"Retail - Restaurants",2023-03-29,+19.40%,+407.23%,1.3,45656392000,8634650000,899100000,32.8,0.00%,+5.18%
+CMI,"Cummins Inc",232.71,Auto-Tires-Trucks,"Engines - Internal Combustion",2023-03-29,-3.95%,+98.13%,1.01,32439908000,28074000000,2151000000,16.54,2.74%,+12.03%
+CMS,"Cms Energy Corp",61.17,Utilities,"Utility - Electric Power",2023-03-29,-3.41%,+116.28%,0.34,17624532000,8596000000,837000000,2.89,3.23%,-11.50%
+CNC,"Centene Corp",63.65,Medical,"Medical - HMO",2023-03-29,-22.39%,+473.30%,0.56,34760184000,144547000000,1202000000,5.76,0.00%,-25.33%
+CNP,"Centerpoint Energy Inc",29.3,Utilities,"Utility - Electric Power",2023-03-29,-2.30%,+19.66%,0.87,18090856000,9321000000,1057000000,1.38,2.65%,-3.55%
+COF,"Capital One Financial Corp",94.12,Finance,"Finance - Consumer Loans",2023-03-29,+1.25%,+65.82%,1.49,34739136000,38373000000,7360000000,17.6,2.63%,-29.37%
+COO,"Cooper Companies",361.82,Medical,"Medical - Dental Suppliers",2023-03-29,+9.42%,+228.88%,0.89,17546988000,3308400000,385800000,12.08,0.02%,-12.34%
+COP,Conocophillips,99.75,Oils-Energy,"Oil - US Integrated",2023-03-29,-15.47%,+62.95%,1.29,119354728000,82156000000,18680000000,13.49,2.08%,-3.62%
+COST,"Costco Wholesale",490.87,Retail-Wholesale,"Retail - Discount",2023-03-29,+7.53%,+358.74%,0.79,215874224000,226954000000,5844000000,13.77,0.74%,-13.15%
+CPB,"Campbell Soup Company",54.62,"Consumer Staples","Food - Misc & Diversified",2023-03-29,-3.75%,+20.70%,0.34,16396311000,8562000000,757000000,3.08,2.70%,+23.71%
+CPRT,"Copart Inc",74.04,"Business Services","Auction Valuation Services",2023-03-29,+21.60%,+753.34%,1.21,34843644000,3500920000,1090130000,2.28,0.00%,+17.35%
+CPT,"Camden Property Trust",102.64,Finance,"REIT - Equity Trust Resident",2023-03-29,-8.26%,+46.35%,0.79,10940412000,1422760000,653610000,5.99,3.74%,-39.21%
+CRL,"Charles River Laboratories Intl",197.58,Medical,"Medical Services",2023-03-29,-9.33%,+333.45%,1.36,9783704000,3976060000,486230000,11.13,0.00%,-30.10%
+CRM,"Salesforce Inc",196.64,"Computers and Technology","Computer - Software",2023-03-29,+48.31%,+330.13%,1.21,192300000000,31352000000,208000000,2.67,0.00%,-8.66%
+CSCO,"Cisco Systems Inc",51.17,"Computers and Technology","Computer - Networks",2023-03-29,+7.41%,+141.10%,1,206388512000,51557000000,11812000000,3.05,3.02%,-7.20%
+CSGP,"Costar Group Inc",68.21,"Computers and Technology","IT Services",2023-03-29,-11.74%,+515.75%,0.88,27416432000,2182400000,369450000,1.13,0.00%,-0.26%
+CSX,"CSX Corp",29.59,Transportation,"Transportation - Rail",2023-03-29,-4.49%,+254.57%,1.22,59709848000,14853000000,4166000000,1.9,1.51%,-21.16%
+CTAS,"Cintas Corp",465.15,"Industrial Products","Uniform & Related",2023-03-29,+3.00%,+905.28%,1.34,45081680000,7854460000,1235760000,12.01,1.04%,+9.90%
+CTLT,"Catalent Inc",66.91,Medical,"Medical - Drugs",2023-03-29,+48.66%,N/A,1.18,11871532000,4828000000,503000000,2.99,0.00%,-38.05%
+CTRA,"Coterra Energy Inc",24.11,Oils-Energy,"Oil - US Exploration & Product",2023-03-29,-1.87%,-29.06%,0.25,18356786000,9051000000,4065000000,4.84,3.34%,-14.17%
+CTSH,"Cognizant Tech Sol",59.51,"Computers and Technology","Business Software Services",2023-03-29,+4.06%,+53.88%,1.1,30022942000,19428000000,2290000000,4.4,1.97%,-34.99%
+CTVA,"Corteva Inc",59.94,"Consumer Staples","Agriculture Operations",2023-03-29,+1.97%,N/A,0.8,41402348000,17455000000,1147000000,2.65,1.03%,+1.54%
+CVS,"CVS Corp",74.09,Retail-Wholesale,"Retail - Drug Stores",2023-03-29,-20.50%,+32.97%,0.65,93894280000,322467000000,4149000000,8.7,3.31%,-31.42%
+CVX,"Chevron Corp",160.86,Oils-Energy,"Oil - International Integrated",2023-03-29,-10.38%,+34.23%,1.16,304095424000,246252000000,35465000000,18.83,3.79%,-3.30%
+CZR,"Caesars Entertainment Inc",45.18,"Consumer Discretionary","Leisure & Recreation Services",2023-03-29,+8.61%,N/A,2.9,9412017000,10821000000,-899000000,-1.82,0.00%,-41.23%
+D,"Dominion Resources",55.58,Utilities,"Utility - Electric Power",2023-03-29,-9.36%,-5.95%,0.45,45701816000,17174000000,994000000,4.12,4.88%,-34.02%
+DAL,"Delta Air Lines Inc",33.32,Transportation,"Transportation - Airline",2023-03-29,+1.40%,+96.67%,1.26,20821032000,50582000000,1318000000,3.2,0.00%,-13.09%
+DD,"Dupont Denemours Inc",70.83,"Basic Materials","Chemical - Diversified",2023-03-29,+3.21%,+53.76%,1.42,31891160000,13017000000,5868000000,3.41,2.07%,-7.22%
+DE,"Deere & Company",400.79,"Industrial Products","Machinery - Farm",2023-03-29,-6.52%,+359.82%,1.05,117150896000,52577000000,7131000000,26.96,1.21%,-7.36%
+DFS,"Discover Financial Services",97.68,Finance,"Finance - Consumer Loans",2023-03-29,-0.15%,+109.99%,1.46,24421432000,15202000000,4392000000,15.49,2.55%,-12.22%
+DG,"Dollar General Corp",207.14,Retail-Wholesale,"Retail - Discount",2023-03-29,-15.88%,+311.49%,0.34,45602952000,37844860000,2415990000,10.68,1.06%,-8.47%
+DGX,"Quest Diagnostics Inc",138.48,Medical,"Medical - Outpatient & Hm Care",2023-03-29,-11.48%,+145.82%,0.95,15450518000,9883000000,946000000,9.92,1.90%,-4.43%
+DHI,"D.R. Horton",95.76,Construction,"Building - Residential & Comm",2023-03-29,+7.43%,+293.83%,1.51,32862710000,33480000000,5857500000,16.13,1.04%,+22.35%
+DHR,"Danaher Corp",247.48,Conglomerates,"Conglomerates - Div Operations",2023-03-29,-6.76%,+297.18%,0.8,179849248000,31471000000,7209000000,10.95,0.41%,-15.09%
+DIS,"Walt Disney Company",96.87,"Consumer Discretionary","Media Conglomerates",2023-03-29,+11.50%,+66.94%,1.3,173217840000,82722000000,3145000000,3.46,0.00%,-30.17%
+DISH,"Dish Network Corp",9.1,"Consumer Discretionary","Cable TV",2023-03-29,-35.19%,-77.10%,1.84,4610400000,16679410000,2303230000,3.62,0.00%,-70.97%
+DLR,"Digital Realty Trust",92.4,Finance,"REIT - Equity Trust Other",2023-03-29,-7.85%,+36.63%,0.52,26630280000,4691830000,377680000,1.33,5.34%,-34.42%
+DLTR,"Dollar Tree Inc",141.95,Retail-Wholesale,"Retail - Discount",2023-03-29,+0.36%,+192.50%,0.68,31339160000,28331700000,1615400000,7.21,0.00%,-10.59%
+DOV,"Dover Corp",146.96,"Industrial Products","Machinery - General Industrial",2023-03-29,+8.53%,+145.12%,1.36,20173148000,8508090000,1065380000,8.46,1.40%,-7.37%
+DOW,"Dow Inc",53.6,"Basic Materials","Chemical - Diversified",2023-03-29,+6.37%,N/A,1.33,37459696000,56902000000,4582000000,6.22,5.29%,-16.39%
+DPZ,"Domino's Pizza Inc",327.58,Retail-Wholesale,"Retail - Restaurants",2023-03-29,-5.43%,+530.31%,0.76,11483576000,4537160000,452260000,12.54,1.49%,-17.91%
+DRI,"Darden Restaurants",154.67,Retail-Wholesale,"Retail - Restaurants",2023-03-29,+11.81%,+198.90%,1.23,18799772000,9630000000,952800000,7.66,3.13%,+18.68%
+DTE,"Dte Energy Company",107.94,Utilities,"Utility - Electric Power",2023-03-29,-8.16%,+86.57%,0.58,21898976000,19228000000,1083000000,6.1,3.59%,-16.78%
+DUK,"Duke Energy Corp",96.27,Utilities,"Utility - Electric Power",2023-03-29,-6.52%,+30.53%,0.42,73018896000,28768000000,2550000000,5.33,4.24%,-12.51%
+DVA,"Davita Healthcare Partners Inc",78.47,Medical,"Medical - Outpatient & Hm Care",2023-03-29,+5.09%,+30.45%,0.95,6992440000,11609890000,560400000,6.47,0.00%,-32.34%
+DVN,"Devon Energy Corp",49.79,Oils-Energy,"Oil - US Exploration & Product",2023-03-29,-19.05%,-13.91%,2.33,31764002000,19169000000,6015000000,8.31,1.65%,-17.63%
+DXC,"Dxc Technology Company",24.83,"Computers and Technology","IT Services",2023-03-29,-6.30%,N/A,1.95,5546334000,16265000000,718000000,3.29,0.00%,-24.60%
+DXCM,"Dexcom Inc",113.96,Medical,"Medical Instruments",2023-03-29,+0.64%,"+2,622.85%",1.1,43979712000,2909800000,341200000,0.87,0.00%,-7.93%
+EA,"Electronic Arts Inc",119.19,"Consumer Discretionary","Toys & Game & Hobby",2023-03-29,-2.45%,+566.78%,0.86,32582960000,6991000000,789000000,3.94,0.64%,-6.91%
+EBAY,"Ebay Inc",43.63,Retail-Wholesale,"Internet Commerce",2023-03-29,+5.21%,+87.78%,1.37,23016044000,9795000000,-1269000000,3.38,2.33%,-25.77%
+ECL,"Ecolab Inc",162.23,"Basic Materials","Chemical - Specialty",2023-03-29,+11.45%,+99.78%,0.98,45598280000,14187800000,1091700000,4.49,1.32%,-9.01%
+ED,"Consolidated Edison Company",95.11,Utilities,"Utility - Electric Power",2023-03-29,-0.21%,+54.66%,0.35,33512698000,15670000000,1660000000,4.55,3.43%,+2.21%
+EFX,"Equifax Inc",198.72,"Business Services","Financial Transaction Services",2023-03-29,+2.24%,+239.33%,1.45,24081018000,5122200000,696200000,7.56,0.80%,-16.73%
+EIX,"Edison International",69.8,Utilities,"Utility - Electric Power",2023-03-29,+9.71%,+36.53%,0.78,26286476000,17220000000,824000000,4.63,4.29%,+0.85%
+EL,"Estee Lauder Companies",244.63,"Consumer Staples","Cosmetics & Toiletries",2023-03-29,-1.40%,+275.50%,1,85886400000,17737000000,2390000000,5.23,1.10%,-11.88%
+ELV,"Elevance Health Inc",456.17,Medical,"Medical Services",2023-03-29,-11.07%,+592.33%,0.85,108881608000,156595000000,6025000000,29.05,1.29%,-5.90%
+EMN,"Eastman Chemical Company",82.58,"Basic Materials","Chemical - Diversified",2023-03-29,+1.40%,+16.99%,1.48,9738340000,10580000000,793000000,7.83,3.87%,-25.12%
+EMR,"Emerson Electric Company",84.94,"Industrial Products","Machinery - Electrical",2023-03-29,-11.58%,+49.81%,1.39,47826180000,19629000000,3231000000,4.98,2.49%,-13.52%
+ENPH,"Enphase Energy Inc",203.95,Oils-Energy,Solar,2023-03-29,-23.03%,"+3,021.29%",1.49,26414900000,2330850000,397360000,3.14,0.00%,+4.31%
+EOG,"Eog Resources",112.68,Oils-Energy,"Oil - US Exploration & Product",2023-03-29,-13.00%,+72.42%,1.52,64890608000,25702000000,7759000000,13.75,2.99%,-6.77%
+EPAM,"Epam Systems Inc",285.76,"Computers and Technology","IT Services",2023-03-29,-12.81%,"+1,118.25%",1.57,16322875000,4824700000,419420000,9.96,0.00%,+3.84%
+EQIX,"Equinix Inc",694.51,Finance,"REIT - Equity Trust Retail",2023-03-29,+6.03%,+215.77%,0.61,63376104000,7263110000,704350000,7.68,2.00%,-4.98%
+EQR,"Equity Residential",57.58,Finance,"REIT - Equity Trust Resident",2023-03-29,-2.41%,+1.56%,0.8,21171480000,2735180000,776910000,2.06,4.74%,-36.08%
+EQT,"Eqt Corp",31.45,Oils-Energy,"Oil - US Exploration & Product",2023-03-29,-7.04%,-16.32%,1.18,11135124000,7497690000,1770970000,3.1,1.94%,-9.89%
+ES,"Eversource Energy",77.55,Utilities,"Utility - Electric Power",2023-03-29,-7.50%,+75.29%,0.45,26547436000,12289340000,1404880000,4.09,3.54%,-10.89%
+ESS,"Essex Property Trust",204.31,Finance,"REIT - Equity Trust Resident",2023-03-29,-3.59%,+32.99%,0.74,12909559000,1606810000,408320000,6.28,4.39%,-40.76%
+ETN,"Eaton Corp",167.63,"Industrial Products","Machinery - Electrical",2023-03-29,+6.80%,+170.35%,1.13,65989764000,20752000000,2461000000,7.57,2.08%,+8.70%
+ETR,"Entergy Corp",106.16,Utilities,"Utility - Electric Power",2023-03-29,-5.64%,+66.16%,0.63,22213492000,13764240000,1097140000,6.45,4.07%,-7.96%
+ETSY,"Etsy Inc",107.67,"Computers and Technology","Internet - Services",2023-03-29,-10.11%,N/A,1.99,13095624000,2566110000,-694290000,2.46,0.00%,-22.28%
+EVRG,"Evergy Inc",60.13,Oils-Energy,"Oil - Production & Pipeline",2023-03-29,-4.45%,+78.54%,0.48,13600496000,5859100000,752700000,3.75,4.14%,-10.21%
+EW,"Edwards Lifesciences Corp",81.64,Medical,"Medical Instruments",2023-03-29,+9.42%,+487.80%,1.01,48784984000,5382400000,1521900000,2.48,0.00%,-28.47%
+EXC,"Exelon Corp",41.15,Utilities,"Utility - Electric Power",2023-03-29,-4.81%,+65.74%,0.6,40580264000,19078000000,2170000000,2.26,3.53%,-10.58%
+EXPD,"Expeditors Intl",105.59,Transportation,"Transportation - Services",2023-03-29,+1.61%,+193.59%,1,16202434000,17071280000,1357400000,8.24,1.28%,+0.56%
+EXPE,"Expedia Group Inc",95.03,Retail-Wholesale,"Internet Commerce",2023-03-29,+8.48%,+55.04%,1.6,14267499000,11667000000,352000000,4.91,0.00%,-50.81%
+EXR,"Extra Space Storage Inc",155.66,Finance,"REIT - Equity Trust Other",2023-03-29,+5.76%,+284.87%,0.54,20401632000,1924170000,860690000,6.41,4.29%,-22.41%
+F,"Ford Motor Company",12.05,Auto-Tires-Trucks,"Auto - Domestic",2023-03-29,+3.61%,-11.79%,1.53,46239712000,158057000000,-1981000000,1.87,5.17%,-27.71%
+FANG,"Diamondback Energy",132.79,Oils-Energy,"Oil - US Exploration & Product",2023-03-29,-2.92%,+387.00%,2.03,23997050000,9643000000,4386000000,24.04,2.45%,-5.62%
+FAST,"Fastenal Company",52.97,Retail-Wholesale,"Building Prds Retail - Wsale",2023-03-29,+11.94%,+105.07%,1.19,30049678000,6980600000,1086900000,1.9,2.66%,-9.39%
+FCX,"Freeport-Mcmoran Inc",39.44,"Basic Materials","Mining - Non Ferrous",2023-03-29,+3.79%,+15.92%,2.02,54895724000,22780000000,3468000000,2.43,0.78%,-21.54%
+FDS,"Factset Research Systems Inc",407.63,"Business Services","Business Information",2023-03-29,+1.60%,+333.55%,0.84,15357028000,1843890000,396920000,14.68,0.89%,-5.50%
+FDX,"Fedex Corp",223.65,Transportation,"Transportation - Air Freight",2023-03-29,+29.13%,+124.48%,1.31,55408036000,93512000000,3826000000,16.9,2.09%,-2.78%
+FE,"Firstenergy Corp",39.29,Utilities,"Utility - Electric Power",2023-03-29,-6.32%,-8.48%,0.43,22100100000,12459000000,406000000,2.42,4.04%,-12.86%
+FFIV,"F5 Inc",141.95,"Computers and Technology","Internet - Software",2023-03-29,-1.09%,+56.99%,1.09,8407921000,2695850000,322160000,6.53,0.00%,-33.10%
+FICO,"Fair Isaac and Company",698.13,"Computers and Technology","IT Services",2023-03-29,+16.63%,"+1,387.24%",1.27,17093326000,1377270000,373540000,14.34,0.00%,+50.98%
+FIS,"Fidelity National Information Services",51.47,"Business Services","Financial Transaction Services",2023-03-29,-24.14%,+27.84%,0.84,29981508000,14528000000,-16720000000,6.65,4.11%,-47.29%
+FISV,"Fiserv Inc",111.84,"Business Services","Financial Transaction Services",2023-03-29,+10.66%,+406.62%,0.86,69897856000,17737000000,2530000000,6.5,0.00%,+11.02%
+FITB,"Fifth Third Bancorp",27.03,Finance,"Banks - Major Regional",2023-03-29,-17.62%,+61.50%,1.21,17938962000,9353000000,2446000000,3.45,5.01%,-40.98%
+FLT,"Fleetcor Technologies",207.43,"Business Services","Financial Transaction Services",2023-03-29,+12.93%,+163.78%,1.2,14863020000,3427130000,954330000,14.91,0.00%,-14.64%
+FMC,"FMC Corp",120.97,"Basic Materials","Chemical - Diversified",2023-03-29,-3.07%,+109.10%,0.84,14923182000,5802300000,731500000,7.41,1.95%,-11.02%
+FOX,"Fox Corp Cl B",30.52,"Consumer Discretionary","Broadcast - Radio & TV",2023-03-29,+7.28%,N/A,0.91,16106352000,13974000000,1205000000,3.24,1.66%,-18.11%
+FOXA,"Fox Corp Cl A",33.17,"Consumer Discretionary","Broadcast - Radio & TV",2023-03-29,+9.22%,N/A,0.86,17512250000,13974000000,1205000000,3.24,1.53%,-18.10%
+FRC,"First Republic Bank",14.26,Finance,"Banks - West",2023-03-29,-88.30%,-65.04%,1.15,2425235000,6753000000,1665000000,8.25,8.00%,-91.45%
+FRT,"Federal Realty Investment Trust",93.83,Finance,"REIT - Equity Trust Retail",2023-03-29,-7.14%,-14.05%,1.2,7554439000,1074380000,385490000,4.67,4.65%,-21.34%
+FSLR,"First Solar Inc",215.35,Oils-Energy,Solar,2023-03-29,+43.77%,+678.97%,1.36,22388956000,2619320000,-44170000,-0.42,0.00%,+156.09%
+FTNT,"Fortinet Inc",64.81,"Computers and Technology",Security,2023-03-29,+32.56%,"+1,257.05%",1.14,50391920000,4417400000,857300000,1.01,0.00%,-4.28%
+FTV,"Fortive Corp",67.27,"Computers and Technology","Electronic Test Equipment",2023-03-29,+4.70%,N/A,1.13,23406498000,5825700000,755200000,3.15,0.42%,+8.36%
+GD,"General Dynamics Corp",226.8,Aerospace,"Aerospace - Defense",2023-03-29,-8.59%,+219.81%,0.84,61948004000,39407000000,3390000000,12.2,2.24%,-5.85%
+GE,"General Electric Company",94.06,Conglomerates,"Conglomerates - Div Operations",2023-03-29,+44.53%,-35.17%,1.25,101548952000,76555000000,225000000,2.61,0.34%,+31.63%
+GEHC,"Ge Healthcare Technologies Inc",79.24,Medical,"Medical Information Systems",2023-03-29,+35.73%,N/A,N/A,34906912000,18341000000,1916000000,1.31,0.00%,N/A
+GEN,"Gen Digital Inc",16.64,"Business Services","Technology Services",2023-03-29,-22.35%,-32.33%,0.84,10673455000,2796000000,836000000,1.69,2.99%,-40.95%
+GILD,"Gilead Sciences Inc",81.29,Medical,"Medical - Biomedical",2023-03-29,-5.31%,+65.45%,0.38,101116640000,27281000000,4592000000,7.27,3.71%,+37.36%
+GIS,"General Mills",85.03,"Consumer Staples","Food - Misc & Diversified",2023-03-29,+1.41%,+71.91%,0.28,49789996000,18992800000,2707300000,4.3,2.55%,+27.18%
+GL,"Globe Life Inc",109.24,Finance,"Finance - Misc Services",2023-03-29,-9.38%,+172.86%,0.8,10499555000,5214910000,739700000,8.16,0.76%,+7.07%
+GLW,"Corning Inc",34.36,"Computers and Technology","Communications Components",2023-03-29,+7.58%,+151.69%,1.07,28424632000,14189000000,1316000000,2.09,3.34%,-9.46%
+GM,"General Motors Company",35.7,Auto-Tires-Trucks,"Auto - Domestic",2023-03-29,+6.12%,+23.01%,1.36,47724480000,156735000000,9934000000,7.6,1.05%,-19.27%
+GNRC,"Generac Holdings Inc",112.58,"Computers and Technology","Electrical Power",2023-03-29,+11.84%,+210.64%,1.18,6793955000,4564740000,399500000,8.61,0.00%,-63.95%
+GOOG,"Alphabet Cl C",101.9,"Computers and Technology","Internet - Services",2023-03-29,+14.84%,N/A,1.09,1298117520000,282836000000,59972000000,4.55,0.00%,-28.21%
+GOOGL,"Alphabet Cl A",101.39,"Computers and Technology","Internet - Services",2023-03-29,+14.92%,+408.85%,1.09,1293891200000,282836000000,59972000000,4.55,0.00%,-28.32%
+GPC,"Genuine Parts Company",162.54,Auto-Tires-Trucks,"Auto - Truck Replacement Parts",2023-03-29,-6.32%,+106.85%,0.9,22718124000,22095970000,1182700000,8.34,2.36%,+27.34%
+GPN,"Global Payments Inc",103.33,"Business Services","Financial Transaction Services",2023-03-29,+4.04%,+301.05%,1,26267610000,8975520000,111490000,8.87,1.00%,-23.75%
+GRMN,"Garmin Ltd",98.45,"Computers and Technology","Electronics Products - Misc",2023-03-29,+6.67%,+192.71%,0.94,18512068000,4860290000,973590000,5.14,3.02%,-17.18%
+GS,"Goldman Sachs Group",320.72,Finance,"Finance - Investment Brokers",2023-03-29,-6.60%,+116.41%,1.42,106293680000,47365000000,11261000000,30.06,3.14%,-4.35%
+GWW,"W.W. Grainger",675.04,"Industrial Products","Industrial Services",2023-03-29,+21.36%,+200.40%,1.18,33969748000,15228000000,1547000000,29.67,1.02%,+31.56%
+HAL,"Halliburton Company",31.35,Oils-Energy,"Oil - Field Services",2023-03-29,-20.33%,-22.57%,2.12,28289916000,20297000000,1572000000,2.16,2.05%,-16.00%
+HAS,"Hasbro Inc",52,"Consumer Discretionary","Toys & Game & Hobby",2023-03-29,-14.77%,+14.88%,0.76,6977346000,5856700000,203500000,4.45,5.55%,-37.97%
+HBAN,"Huntington Bcshs",11.34,Finance,"Banks - Midwest",2023-03-29,-19.57%,+50.88%,1.11,16119962000,7950000000,2238000000,1.5,5.58%,-24.85%
+HCA,"Hca Holdings Inc",257.36,Medical,"Medical - Hospitals",2023-03-29,+7.25%,+526.34%,1.64,70555848000,60233000000,5643000000,16.9,0.94%,-2.67%
+HD,"Home Depot",283.36,Retail-Wholesale,"Building Prds Retail - Wsale",2023-03-29,-10.29%,+302.44%,0.93,285019936000,157403000000,17105000000,16.68,2.98%,-9.84%
+HES,"Hess Corp",133,Oils-Energy,"Oil - US Integrated",2023-03-29,-6.22%,+80.98%,1.55,39680928000,11570000000,2096000000,7.12,1.35%,+23.81%
+HIG,"Hartford Financial Services Group",69.58,Finance,"Insurance - Multi Line",2023-03-29,-8.24%,+159.69%,0.87,20974820000,22362000000,1815000000,7.56,2.54%,-3.90%
+HII,"Huntington Ingalls Industries",208.78,Aerospace,"Aerospace - Defense",2023-03-29,-9.49%,+287.81%,0.64,8257494000,10676000000,579000000,14.45,2.40%,+4.21%
+HLT,"Hilton Inc",135.91,"Consumer Discretionary","Hotels & Motels",2023-03-29,+7.56%,N/A,1.24,35307420000,8773000000,1255000000,4.9,0.45%,-9.80%
+HOLX,"Hologic Inc",79.2,Medical,"Medical Instruments",2023-03-29,+5.87%,+248.83%,1.01,19436848000,4862800000,1302000000,4.91,0.00%,+4.21%
+HON,"Honeywell International Inc",189.07,Conglomerates,"Conglomerates - Div Operations",2023-03-29,-11.77%,+149.40%,1.1,125556872000,35466000000,4966000000,8.78,2.19%,-4.08%
+HPE,"Hewlett Packard Enterprise Comp",15.52,"Computers and Technology","Computer - Integrated Systems",2023-03-29,-2.76%,N/A,1.23,19373242000,28496000000,868000000,0.65,3.21%,-10.70%
+HPQ,"HP Inc",28.31,"Computers and Technology","Computer - Mini",2023-03-29,+5.36%,+154.97%,1.01,27224612000,62983000000,3203000000,3.72,3.80%,-26.94%
+HRL,"Hormel Foods Corp",39.3,"Consumer Staples","Food - Meat Products",2023-03-29,-13.72%,+89.55%,0.18,21402232000,12458810000,999990000,1.79,2.81%,-22.02%
+HSIC,"Henry Schein Inc",79.75,Medical,"Medical - Dental Suppliers",2023-03-29,-0.15%,+119.46%,0.8,10456771000,12647000000,538000000,4.82,0.00%,-9.90%
+HST,"Host Marriott Financial Trust",15.76,Finance,"REIT - Equity Trust Other",2023-03-29,-1.81%,-12.81%,1.29,10880555000,4907000000,633000000,0.88,3.15%,-17.49%
+HSY,"Hershey Foods Corp",252.6,"Consumer Staples","Food - Confectionery",2023-03-29,+9.08%,+188.93%,0.31,51600700000,10419290000,1644820000,8.52,1.64%,+17.68%
+HUM,"Humana Inc",485.75,Medical,"Medical - HMO",2023-03-29,-5.16%,+599.48%,0.72,60414160000,92870000000,2806000000,25.21,0.65%,+11.65%
+HWM,"Howmet Aerospace Inc",41.81,"Industrial Products","Engineering & R&D Services",2023-03-29,+6.09%,N/A,1.46,16953076000,5663000000,469000000,1.4,0.39%,+14.58%
+IBM,"International Business Machines",129.71,"Computers and Technology","Computer - Integrated Systems",2023-03-29,-7.94%,-39.36%,0.85,117325088000,60530000000,1640000000,9.12,5.10%,-1.34%
+ICE,"Intercontinental Exchange",101.67,Finance,"Securities Exchanges",2023-03-29,-0.90%,+203.86%,0.92,55382136000,7292000000,1446000000,5.4,1.70%,-24.79%
+IDXX,"Idexx Laboratories",487.62,Medical,"Medical Instruments",2023-03-29,+19.53%,+956.69%,1.18,40468268000,3367320000,679090000,8.03,0.00%,-9.62%
+IEX,"Idex Corp",226.07,"Industrial Products","Machinery - General Industrial",2023-03-29,-0.99%,+317.28%,0.99,16833716000,3181900000,586900000,8.13,1.08%,+16.11%
+IFF,"International Flavors & Fragrances",89.41,"Consumer Staples","Consumer Prdts - Misc Staple",2023-03-29,-14.72%,+16.19%,1.08,22721370000,12440000000,-1871000000,5.56,3.64%,-31.41%
+ILMN,"Illumina Inc",222.03,Medical,"Medical - Biomedical",2023-03-29,+9.81%,+296.15%,1.15,33786720000,4584000000,-4404000000,2.12,0.00%,-36.03%
+INCY,"Incyte Corp",71.14,Medical,"Medical - Biomedical",2023-03-29,-11.43%,+200.34%,0.74,15676669000,3394640000,340660000,2.13,0.00%,-9.89%
+INTC,"Intel Corp",31.52,"Computers and Technology","Semi General",2023-03-29,+19.26%,+34.17%,0.81,121172728000,63054000000,8014000000,1.85,4.98%,-38.81%
+INTU,"Intuit Inc",433.29,"Computers and Technology","Computer - Software",2023-03-29,+11.32%,+538.64%,1.16,117641352000,12726000000,2066000000,8.54,0.74%,-9.83%
+INVH,"Invitation Homes Inc",30.23,Finance,"REIT - Equity Trust Resident",2023-03-29,+1.99%,N/A,0.89,18012168000,2238120000,383330000,0.64,3.53%,-25.30%
+IP,"International Paper Company",35.07,"Basic Materials","Paper & Related Products",2023-03-29,+1.27%,-25.59%,1.07,12133912000,21161000000,1504000000,3.88,5.34%,-23.96%
+IPG,"Interpublic Group of Companies",35.32,"Business Services","Advertising Marketing Services",2023-03-29,+6.03%,+170.45%,1.11,13571206000,10927800000,938000000,2.75,3.52%,-1.92%
+IQV,"Iqvia Holdings Inc",192.91,"Business Services","Technology Services",2023-03-29,-5.85%,N/A,1.4,35342592000,14410000000,1091000000,9.36,0.00%,-14.90%
+IR,"Ingersoll Rand Inc",56.7,"Industrial Products","Machinery - General Industrial",2023-03-29,+8.52%,N/A,1.43,22661392000,5916300000,604700000,2.2,0.14%,+13.86%
+IRM,"Iron Mountain Inc",50.97,Finance,"REIT - Equity Trust Other",2023-03-29,+2.25%,+37.92%,0.89,14568072000,5103570000,556980000,1.75,4.94%,-5.05%
+ISRG,"Intuitive Surg Inc",250.76,Medical,"Medical Instruments",2023-03-29,-5.50%,+357.14%,1.29,87385616000,6222200000,1322300000,3.66,0.00%,-14.98%
+IT,"Gartner Inc",318.36,"Business Services",Consulting,2023-03-29,-5.29%,+478.44%,1.28,24882864000,5475850000,807800000,11.29,0.00%,+7.31%
+ITW,"Illinois Tool Works Inc",239.44,"Industrial Products","Machinery - General Industrial",2023-03-29,+8.69%,+284.16%,1.1,71361648000,15932000000,3034000000,9.17,2.24%,+11.73%
+IVZ,"Invesco Plc",16.06,Finance,"Finance - Investment Mgmt",2023-03-29,-10.73%,-46.06%,1.35,7103211000,6048900000,920700000,1.68,4.80%,-28.27%
+J,"Jacobs Engineering Group Inc",115.71,"Business Services","Technology Services",2023-03-29,-3.63%,+103.09%,0.86,14473272000,14922830000,644040000,7.05,0.91%,-16.49%
+JBHT,"J B Hunt Transport",171.06,Transportation,"Transportation - Truck",2023-03-29,-1.89%,+129.99%,1.14,17775800000,14814000000,969350000,9.2,0.98%,-18.36%
+JCI,"Johnson Controls Intl",59.56,"Industrial Products","Protection - Safety",2023-03-29,-6.94%,+84.09%,1.23,36416752000,25299000000,1532000000,3.14,2.44%,-9.74%
+JKHY,"Jack Henry & Assoc",148.52,"Computers and Technology","Electronic Misc Services",2023-03-29,-15.40%,+224.00%,0.64,10928211000,1942880000,362920000,4.82,1.39%,-23.64%
+JNJ,"Johnson & Johnson",153.31,Medical,"Large Cap Pharma",2023-03-29,-13.21%,+86.21%,0.54,395382720000,94943000000,17941000000,10.16,2.98%,-13.79%
+JNPR,"Juniper Networks",33.37,"Computers and Technology","Wireless Equipment",2023-03-29,+4.41%,+77.78%,0.94,10677721000,5301200000,471000000,1.45,2.67%,-10.56%
+JPM,"JP Morgan Chase & Company",129.14,Finance,"Banks - Major Regional",2023-03-29,-3.70%,+171.56%,1.12,379339584000,154792000000,37676000000,12.08,3.10%,-8.33%
+K,"Kellogg Company",66.49,"Consumer Staples","Food - Misc & Diversified",2023-03-29,-6.67%,+2.89%,0.42,22659910000,15315000000,960000000,4.23,3.56%,+5.61%
+KDP,"Keurig Dr Pepper Inc",35.29,"Consumer Staples","Beverages - Soft",2023-03-29,-1.04%,-25.15%,0.57,49422544000,14057000000,1436000000,1.68,2.28%,-7.13%
+KEY,Keycorp,12.67,Finance,"Banks - Major Regional",2023-03-29,-27.27%,+24.20%,1.31,11440506000,8130000000,1917000000,1.92,6.63%,-45.92%
+KEYS,"Keysight Technologies Inc",156.65,"Computers and Technology","Electronics - Measuring Inst",2023-03-29,-8.43%,N/A,1.07,27666770000,5420000000,1124000000,7.32,0.00%,-2.12%
+KHC,"Kraft Heinz Company",38.67,"Consumer Staples","Food - Misc & Diversified",2023-03-29,-5.01%,-25.50%,0.7,47104488000,26485000000,2363000000,2.78,4.17%,-1.83%
+KIM,"Kimco Realty Corp",18.6,Finance,"REIT - Equity Trust Retail",2023-03-29,-12.18%,-18.62%,1.46,11300631000,1727680000,125980000,0.15,5.05%,-23.71%
+KLAC,"K L A-Tencor Corp",385.15,"Computers and Technology","Electronics Products - Misc",2023-03-29,+2.15%,+603.47%,1.38,51377464000,9211880000,3321810000,25.38,1.40%,+2.61%
+KMB,"Kimberly-Clark Corp",132.48,"Consumer Staples","Consumer Prdts - Misc Staple",2023-03-29,-2.41%,+34.28%,0.39,44398824000,20175000000,1934000000,5.63,3.59%,+8.21%
+KMI,"Kinder Morgan",17.25,Oils-Energy,"Oil - Production & Pipeline",2023-03-29,-4.59%,-55.89%,0.95,38350928000,19200000000,2548000000,1.15,6.51%,-8.00%
+KMX,"Carmax Inc",59.53,Retail-Wholesale,"Retail - Wholesale Auto Parts",2023-03-29,-2.23%,+39.74%,1.43,9208000000,31900410000,1151300000,3.57,0.00%,-39.64%
+KO,"Coca-Cola Company",61.86,"Consumer Staples","Beverages - Soft",2023-03-29,-2.75%,+51.88%,0.53,265721728000,43004000000,9542000000,2.48,3.00%,-0.10%
+KR,"Kroger Company",49.04,Retail-Wholesale,"Retail - Supermarket",2023-03-29,+10.00%,+195.23%,0.47,35018012000,148258000000,2244000000,4.22,2.13%,-13.96%
+L,"Loews Corp",56.9,Finance,"Insurance - Multi Line",2023-03-29,-2.45%,+26.80%,0.83,13131689000,14044000000,1012000000,4.74,0.45%,-12.92%
+LDOS,"Leidos Holdings Inc",91.44,Aerospace,"Aerospace - Defense",2023-03-29,-13.07%,+144.48%,0.76,12483159000,14396000000,693000000,6.59,1.58%,-16.15%
+LEN,"Lennar Corp",102.47,Construction,"Building - Residential & Comm",2023-03-29,+13.23%,+145.27%,1.42,29474078000,33671010000,4614130000,17.01,1.47%,+24.19%
+LH,"Laboratory Corp of America Holdings",221.82,Medical,"Medical - Dental Suppliers",2023-03-29,-5.80%,+144.66%,1.06,19530178000,14876800000,1279100000,19.89,1.31%,-19.75%
+LHX,"L3Harris Technologies Inc",194.64,Aerospace,"Aerospace - Defense",2023-03-29,-6.52%,+314.22%,0.71,36462244000,17062000000,1062000000,12.88,2.38%,-21.97%
+LIN,"Linde Plc",349.73,"Basic Materials","Chemical - Specialty",2023-03-29,+7.22%,N/A,0.84,170961952000,33364000000,4147000000,12.29,1.47%,+8.40%
+LKQ,"LKQ Corp",55.82,Auto-Tires-Trucks,"Auto - Truck Replacement Parts",2023-03-29,+4.51%,+153.91%,1.36,14767772000,12794000000,1149000000,3.84,1.99%,+22.60%
+LLY,"Eli Lilly and Company",335.87,Medical,"Large Cap Pharma",2023-03-29,-8.19%,+494.56%,0.36,320867456000,28541400000,6244800000,7.94,1.34%,+15.16%
+LMT,"Lockheed Martin Corp",474.19,Aerospace,"Aerospace - Defense",2023-03-29,-2.53%,+388.44%,0.68,119990440000,65984000000,5732000000,27.42,2.55%,+6.56%
+LNC,"Lincoln National Corp",21.76,Finance,"Insurance - Life",2023-03-29,-29.17%,-36.31%,1.81,3514720000,18784000000,-2227000000,-5.37,8.67%,-67.66%
+LNT,"Alliant Energy Corp",52.82,Utilities,"Utility - Electric Power",2023-03-29,-4.33%,+107.13%,0.53,13051642000,4205000000,686000000,2.79,3.48%,-14.81%
+LOW,"Lowe's Companies",191.94,Retail-Wholesale,"Building Prds Retail - Wsale",2023-03-29,-3.66%,+401.45%,1.1,118026288000,97059000000,6437000000,13.73,2.21%,-10.22%
+LRCX,"Lam Research Corp",515.75,"Computers and Technology","Semi-Eqpt Wafer Fabrication",2023-03-29,+22.71%,"+1,070.00%",1.48,65454756000,17227040000,4605290000,37.36,1.42%,-7.46%
+LUV,"Southwest Airlines Company",31.44,Transportation,"Transportation - Airline",2023-03-29,-6.62%,+127.23%,1.15,18203010000,23814000000,539000000,1.1,2.35%,-29.22%
+LVS,"Las Vegas Sands",54.9,"Consumer Discretionary",Gaming,2023-03-29,+14.21%,-3.14%,1.16,41714024000,4110000000,1832000000,-1.2,0.00%,+41.17%
+LW,"Lamb Weston Holdings Inc",102.57,"Consumer Staples","Food - Misc & Diversified",2023-03-29,+14.78%,N/A,0.51,14628804000,4098900000,200900000,3.41,1.10%,+76.81%
+LYB,"Lyondellbasell Industries NV",91.56,"Basic Materials","Chemical - Diversified",2023-03-29,+10.27%,+42.30%,1.21,29358840000,50451000000,3889000000,12.44,5.29%,-13.16%
+LYV,"Live Nation Entertainment",68.61,"Consumer Discretionary","Leisure & Recreation Services",2023-03-29,-1.62%,+448.50%,1.31,15713449000,16681250000,149220000,0.57,0.00%,-41.65%
+MA,"Mastercard Inc",359.53,"Business Services","Financial Transaction Services",2023-03-29,+3.39%,+554.80%,1.11,337762560000,22237000000,9930000000,10.65,0.64%,+2.58%
+MAA,"Mid-America Apartment Communities",146.76,Finance,"REIT - Equity Trust Resident",2023-03-29,-6.52%,+107.89%,0.77,16740118000,2019870000,637440000,5.69,3.90%,-30.01%
+MAR,"Marriot Int Cl A",162.13,"Consumer Discretionary","Hotels & Motels",2023-03-29,+8.89%,+276.46%,1.58,48985076000,20773000000,2358000000,6.7,1.01%,-5.50%
+MAS,"Masco Corp",48.76,Construction,"Building & Construction - Misc",2023-03-29,+4.48%,+137.14%,1.19,10814249000,8680000000,844000000,3.72,2.37%,-7.84%
+MCD,"McDonald's Corp",277.44,Retail-Wholesale,"Retail - Restaurants",2023-03-29,+5.28%,+176.71%,0.62,201783456000,23182600000,6177400000,10.1,2.20%,+14.20%
+MCHP,"Microchip Technology",80.87,"Computers and Technology","Semi Analog & Mixed",2023-03-29,+15.12%,+323.50%,1.58,42651400000,6820900000,1285500000,5.43,1.84%,+4.42%
+MCK,"Mckesson Corp",357.16,Medical,"Medical - Dental Suppliers",2023-03-29,-4.79%,+228.34%,0.59,48542136000,263966000000,1114000000,24.62,0.61%,+15.78%
+MCO,"Moody's Corp",299.55,Finance,"Finance - Misc Services",2023-03-29,+7.51%,+451.37%,1.3,53879248000,5468000000,1374000000,8.56,1.05%,-10.78%
+MDLZ,"Mondelez Intl Inc",70.37,"Consumer Staples","Food - Misc & Diversified",2023-03-29,+5.58%,+127.34%,0.65,94872528000,31496000000,2717000000,2.98,2.21%,+14.29%
+MDT,"Medtronic Inc",79.07,Medical,"Medical Products",2023-03-29,+1.74%,+69.31%,0.71,105782008000,31686000000,5040000000,5.25,3.42%,-28.07%
+MET,"Metlife Inc",56.49,Finance,"Insurance - Multi Line",2023-03-29,-21.94%,+63.29%,1.08,42922884000,69898000000,2539000000,6.84,3.61%,-20.75%
+META,"Meta Platforms Inc",205.35,"Computers and Technology","Internet - Software",2023-03-29,+70.64%,+684.52%,1.18,520290752000,116609000000,23200000000,9.82,0.00%,-8.16%
+MGM,"MGM Resorts International",43.08,"Consumer Discretionary",Gaming,2023-03-29,+28.48%,+217.95%,2.05,15590615000,13127490000,1473090000,-0.66,0.02%,+2.11%
+MHK,"Mohawk Industries",96.8,"Consumer Discretionary","Textile - Home Furnishings",2023-03-29,-5.30%,-14.93%,1.28,6114455000,11737070000,25250000,12.85,0.00%,-26.59%
+MKC,"Mccormick & Company",81.2,"Consumer Staples","Food - Misc & Diversified",2023-03-29,-2.04%,+120.75%,0.56,21764520000,6350500000,682000000,2.53,1.92%,-16.82%
+MKTX,"Marketaxess Holdings",384.52,Finance,"Securities Exchanges",2023-03-29,+37.88%,+925.58%,0.77,14386948000,718300000,250220000,6.67,0.75%,+6.89%
+MLM,"Martin Marietta Materials",351.24,Construction,"Building - CMT & CNT & AG",2023-03-29,+3.93%,+239.25%,0.87,21494196000,6160700000,866800000,12.08,0.76%,-11.61%
+MMC,"Marsh & Mclennan Companies",164.48,Finance,"Insurance - Brokers",2023-03-29,-0.60%,+327.44%,0.93,80268872000,20720000000,3050000000,6.84,1.45%,-2.80%
+MMM,"3M Company",103.19,Conglomerates,"Conglomerates - Div Operations",2023-03-29,-13.95%,-4.30%,0.96,56106456000,34229000000,5777000000,10.1,5.90%,-30.96%
+MNST,"Monster Beverage Cp",52.15,"Consumer Staples","Beverages - Soft",2023-03-29,+2.73%,+548.51%,0.87,53912604000,6311050000,1191620000,2.23,0.00%,+30.34%
+MO,"Altria Group",44.52,"Consumer Staples",Tobacco,2023-03-29,-2.60%,+28.99%,0.59,79207616000,25096000000,5764000000,4.84,8.48%,-14.43%
+MOH,"Molina Healthcare Inc",265.46,Medical,"Medical - HMO",2023-03-29,-19.61%,+761.00%,0.66,15487319000,31974000000,792000000,17.91,0.00%,-22.52%
+MOS,"Mosaic Company",45.19,"Basic Materials",Fertilizers,2023-03-29,+3.01%,-26.77%,1.53,14687658000,19125200000,3582800000,11.01,2.29%,-33.51%
+MPC,"Marathon Petroleum Corp",134.08,Oils-Energy,"Oil - Refining and Marketing",2023-03-29,+15.20%,+193.68%,1.6,58104736000,177453000000,14516000000,26.56,2.28%,+63.57%
+MPWR,"Monolithic Power Sys",490.91,"Computers and Technology","Semi Analog & Mixed",2023-03-29,+38.83%,"+1,849.28%",1.14,22471768000,1794150000,437670000,9.28,0.63%,-1.70%
+MRK,"Merck & Company",104.92,Medical,"Large Cap Pharma",2023-03-29,-5.43%,+138.76%,0.34,267897728000,59283000000,14519000000,7.48,2.77%,+29.20%
+MRNA,"Moderna Inc",148.8,Medical,"Medical - Biomedical",2023-03-29,-17.16%,N/A,1.7,56663808000,19263000000,8362000000,19.96,0.00%,-14.03%
+MRO,"Marathon Oil Corp",23.64,Oils-Energy,"Oil - US Integrated",2023-03-29,-12.67%,-30.99%,2.38,14652049000,7540000000,3612000000,4.46,1.72%,-6.52%
+MS,"Morgan Stanley",86.24,Finance,"Finance - Investment Brokers",2023-03-29,+1.43%,+286.17%,1.37,142763056000,53668000000,11029000000,6.34,3.65%,-5.51%
+MSCI,"MSCI Inc",550.93,"Computers and Technology","Business Software Services",2023-03-29,+18.44%,"+1,500.06%",1.13,43410280000,2248600000,870570000,11.45,1.02%,+8.49%
+MSFT,"Microsoft Corp",280.51,"Computers and Technology","Computer - Software",2023-03-29,+16.97%,+862.34%,0.92,2048758240000,198270000000,72738000000,9.12,0.99%,-9.72%
+MSI,"Motorola Solutions",276.81,"Computers and Technology","Wireless Equipment",2023-03-29,+7.41%,+326.18%,0.92,45639180000,9112000000,1363000000,9.57,1.29%,+17.73%
+MTB,"M&T Bank Corp",122.4,Finance,"Banks - Major Regional",2023-03-29,-15.62%,+15.63%,0.82,20044288000,8603720000,1991660000,14.23,4.36%,-31.77%
+MTCH,"Match Group Inc",39.17,Retail-Wholesale,"Internet Commerce",2023-03-29,-5.59%,N/A,1.34,11031901000,3188840000,361950000,2.05,0.00%,-63.67%
+MTD,"Mettler-Toledo International",1496.31,"Computers and Technology","Industrial Scientific",2023-03-29,+3.52%,+591.14%,1.18,32523220000,3919710000,872500000,39.54,0.00%,+7.21%
+MU,"Micron Technology",63.54,"Computers and Technology","Semi Memory",2023-03-29,+27.13%,+493.99%,1.39,64684968000,30758000000,8687000000,5.76,0.78%,-20.44%
+NCLH,"Norwegian Cruise Ord",13.16,"Consumer Discretionary","Leisure & Recreation Services",2023-03-29,+7.52%,-58.01%,2.51,5253028000,4843760000,-2269910000,-4.92,0.00%,-35.93%
+NDAQ,"Nasdaq Inc",54.09,Finance,"Securities Exchanges",2023-03-29,-11.83%,+391.70%,0.96,25887818000,6226000000,1125000000,2.67,1.51%,-8.60%
+NDSN,"Nordson Corp",217.02,"Industrial Products","Machinery - General Industrial",2023-03-29,-8.71%,+224.49%,0.91,12253854000,2590280000,513100000,9.31,1.21%,-5.04%
+NEE,"Nextera Energy",76.11,Utilities,"Utility - Electric Power",2023-03-29,-8.96%,+287.44%,0.44,149539120000,20956000000,4147000000,2.91,2.49%,-9.85%
+NEM,"Newmont Mining Corp",48.34,"Basic Materials","Mining - Misc",2023-03-29,+2.42%,+16.16%,0.31,38660760000,11915000000,-429000000,1.86,3.29%,-38.14%
+NFLX,"Netflix Inc",332.03,"Consumer Discretionary","Broadcast - Radio & TV",2023-03-29,+12.60%,"+1,096.45%",1.26,144078656000,31615550000,4491920000,9.95,0.00%,-12.28%
+NI,"NiSource Inc",27.6,Utilities,"Utility - Electric Power",2023-03-29,+0.66%,+136.11%,0.46,11228468000,5850600000,804100000,1.47,3.67%,-11.11%
+NKE,"Nike Inc",120.49,"Consumer Staples","Shoes and Related Apparel",2023-03-29,+2.97%,+299.49%,1.1,182764864000,46710000000,6046000000,3.47,1.15%,-10.62%
+NOC,"Northrop Grumman Corp",461.57,Aerospace,"Aerospace - Defense",2023-03-29,-15.40%,+554.31%,0.51,69822624000,36602000000,4896000000,25.55,1.51%,+3.31%
+NOW,"Servicenow Inc",438.44,"Computers and Technology","IT Services",2023-03-29,+12.92%,"+1,085.30%",1.03,87103240000,7245000000,325000000,2.05,0.00%,-24.76%
+NRG,"NRG Energy",33.18,Utilities,"Utility - Electric Power",2023-03-29,+4.27%,+23.22%,0.99,7581293000,31543000000,1221000000,2.51,4.63%,-11.78%
+NSC,"Norfolk Southern Corp",207.25,Transportation,"Transportation - Rail",2023-03-29,-15.90%,+165.43%,1.3,46601916000,12745000000,3270000000,13.9,2.64%,-27.18%
+NTAP,"Netapp Inc",62.05,"Computers and Technology","Computer - Storage Devices",2023-03-29,+3.31%,+77.93%,1.19,13001145000,6318000000,937000000,4.4,3.29%,-27.97%
+NTRS,"Northern Trust Corp",87.06,Finance,"Banks - Major Regional",2023-03-29,-1.62%,+55.72%,1.08,17650524000,7751700000,1336000000,7.08,3.53%,-26.34%
+NUE,"Nucor Corp",149.92,"Basic Materials","Steel - Producers",2023-03-29,+13.74%,+221.21%,1.59,37347436000,41512470000,7607340000,28.73,1.38%,-2.55%
+NVDA,"Nvidia Corp",269.84,"Computers and Technology","Semi General",2023-03-29,+84.64%,"+8,133.83%",1.76,652326976000,26974000000,4368000000,2.49,0.06%,-4.38%
+NVR,"NVR Inc",5433.99,Construction,"Building - Residential & Comm",2023-03-29,+17.81%,+401.20%,0.98,17580482000,10526430000,1725580000,492.16,0.00%,+17.15%
+NWL,"Newell Rubbermaid Inc",12.1,"Consumer Staples","Consumer Prdts - Misc Staple",2023-03-29,-7.49%,-54.83%,0.94,4876344000,9459000000,197000000,1.62,7.80%,-45.50%
+NWS,"News Corp Cl B",17.06,"Consumer Discretionary","Movie & TV Production & Dist",2023-03-29,-7.48%,N/A,1.34,9635628000,10385000000,623000000,0.79,1.19%,-25.37%
+NWSA,"News Corp Cl A",16.93,"Consumer Discretionary","Movie & TV Production & Dist",2023-03-29,-6.98%,N/A,1.31,9555043000,10385000000,623000000,0.79,1.20%,-24.79%
+NXPI,"Nxp Semiconductors",179,"Computers and Technology","Semi Analog & Mixed",2023-03-29,+13.27%,+471.84%,1.53,44951288000,13205000000,2787000000,14.45,2.34%,-5.50%
+O,"Realty Income Corp",62.04,Finance,"REIT - Equity Trust Retail",2023-03-29,-2.19%,+34.64%,0.79,40331412000,3343680000,869410000,1.38,5.00%,-9.72%
+ODFL,"Old Dominion Freight Line Inc",331.38,Transportation,"Transportation - Truck",2023-03-29,+16.77%,"+1,203.78%",1.08,36531932000,6260080000,1377160000,12.18,0.48%,+4.89%
+OGN,"Organon & Co.",22.68,Medical,"Medical Services",2023-03-29,-18.80%,N/A,0.8,5657478000,6174000000,917000000,5.03,5.04%,-35.51%
+OKE,"Oneok Inc",62.01,Oils-Energy,"Oil Gas Prod Pipeline MLP",2023-03-29,-5.62%,+27.92%,1.68,27271538000,22386890000,1722220000,3.83,6.26%,-12.71%
+OMC,"Omnicom Group Inc",90.48,"Business Services","Advertising Marketing Services",2023-03-29,+10.92%,+50.65%,0.83,17871022000,14289100000,1316500000,6.93,3.16%,+6.69%
+ON,"On Semiconductor",79.87,"Computers and Technology","Semi Analog & Mixed",2023-03-29,+28.06%,+825.39%,1.74,33058510000,8326200000,1902200000,5.33,0.00%,+22.27%
+ORCL,"Oracle Corp",90.62,"Computers and Technology","Computer - Software",2023-03-29,+10.86%,+177.92%,1.02,242577200000,42440000000,6717000000,4.03,1.42%,+8.40%
+ORLY,"O'Reilly Automotive",832.08,Retail-Wholesale,"Retail - Wholesale Auto Parts",2023-03-29,-1.42%,+709.11%,0.88,51250280000,14409860000,2172650000,33.49,0.00%,+21.20%
+OTIS,"Otis Worldwide Corp",82.83,Construction,"Building & Construction - Misc",2023-03-29,+5.77%,N/A,0.93,33903096000,13685000000,1253000000,3.18,1.42%,+6.18%
+OXY,"Occidental Petroleum Corp",62.09,Oils-Energy,"Oil - US Integrated",2023-03-29,-1.43%,-20.62%,1.77,55871736000,36634000000,13304000000,9.33,1.16%,+9.62%
+PARA,"Paramount Global Cl B",21.51,"Consumer Discretionary","Media Conglomerates",2023-03-29,+27.43%,-54.14%,1.63,13927570000,30154000000,1104000000,1.71,4.48%,-42.79%
+PAYC,"Paycom Software Inc",285.87,"Computers and Technology","Internet - Software",2023-03-29,-7.88%,N/A,1.39,16465344000,1375220000,281390000,4.7,0.00%,-17.87%
+PAYX,"Paychex Inc",116.03,"Business Services",Outsourcing,2023-03-29,+0.41%,+210.84%,0.98,39283696000,4611700000,1392800000,3.98,2.90%,-10.66%
+PCAR,"Paccar Inc",72.35,Auto-Tires-Trucks,"Auto - Domestic",2023-03-29,+9.65%,+113.13%,0.92,37540352000,28819700000,3011600000,5.76,1.39%,+21.53%
+PCG,"Pacific Gas & Electric Company",15.84,Utilities,"Utility - Electric Power",2023-03-29,-2.58%,-64.65%,1.1,38818112000,21680000000,1814000000,1.1,0.00%,+31.56%
+PEAK,"Healthpeak Properties Inc",21.36,Finance,"REIT - Equity Trust Other",2023-03-29,-14.80%,-58.12%,0.88,11421212000,2061180000,500450000,0.89,5.75%,-38.18%
+PEG,"Public Service Enterprise Group Inc",61.34,Utilities,"Utility - Electric Power",2023-03-29,+0.11%,+74.37%,0.55,29866348000,9800000000,1031000000,3.47,3.81%,-10.48%
+PEP,"Pepsico Inc",180.67,"Consumer Staples","Beverages - Soft",2023-03-29,+0.01%,+126.81%,0.53,247131600000,86392000000,8910000000,6.79,2.56%,+9.01%
+PFE,"Pfizer Inc",40.25,Medical,"Large Cap Pharma",2023-03-29,-21.45%,+38.57%,0.64,225719648000,100330000000,31372000000,6.58,4.10%,-24.46%
+PFG,"Principal Financial Group Inc",73.34,Finance,"Finance - Investment Mgmt",2023-03-29,-12.61%,+112.49%,1.3,17578850000,17491600000,4811600000,6.67,3.54%,-0.04%
+PG,"Procter & Gamble Company",146.81,"Consumer Staples","Soap and Cleaning Products",2023-03-29,-3.13%,+89.93%,0.4,345284320000,80187000000,14742000000,5.7,2.50%,-4.59%
+PGR,"Progressive Corp",144.48,Finance,"Insurance - Proprty & Casualty",2023-03-29,+11.39%,+465.29%,0.5,83615824000,49610700000,721500000,4.06,0.28%,+23.61%
+PH,"Parker-Hannifin Corp",334.17,"Industrial Products","Machinery - General Industrial",2023-03-29,+14.84%,+257.87%,1.51,42037900000,15861610000,1315610000,19.49,1.62%,+16.57%
+PHM,Pultegroup,57.15,Construction,"Building - Residential & Comm",2023-03-29,+25.52%,+182.95%,1.31,12846291000,16229000000,2617320000,10.88,1.12%,+30.87%
+PKG,"Packaging Corp of America",136.67,"Industrial Products","Containers - Paper Products",2023-03-29,+6.85%,+199.80%,0.88,12091196000,8478000000,1029800000,11.13,3.72%,-11.93%
+PKI,Perkinelmer,129.4,"Computers and Technology","Industrial Scientific",2023-03-29,-7.72%,+281.36%,1.1,16217395000,3311820000,569180000,7.94,0.22%,-27.04%
+PLD,"Prologis Inc",119.88,Finance,"REIT - Equity Trust Other",2023-03-29,+6.34%,+191.77%,0.99,107718000000,5973690000,3364860000,4.35,2.98%,-25.24%
+PM,"Philip Morris International Inc",94.72,"Consumer Staples",Tobacco,2023-03-29,-6.41%,+1.64%,0.69,146258912000,31762000000,9048000000,5.96,5.39%,+2.88%
+PNC,"PNC Bank",128.92,Finance,"Banks - Major Regional",2023-03-29,-18.37%,+90.77%,1.16,50703660000,23542000000,6041000000,13.98,4.73%,-33.79%
+PNR,"Pentair Ltd",53.92,"Industrial Products","Machinery - Thermal Processing",2023-03-29,+19.88%,+1.42%,1.13,8824290000,4121800000,480900000,3.68,1.64%,-2.86%
+PNW,"Pinnacle West Capital Corp",78.45,Utilities,"Utility - Electric Power",2023-03-29,+3.17%,+34.00%,0.44,8779062000,4324390000,483600000,4.27,4.46%,+2.25%
+PODD,"Insulet Corp",312.9,Medical,"Medical Products",2023-03-29,+6.29%,"+1,103.75%",0.75,21647728000,1305300000,4600000,1.34,0.00%,+23.47%
+POOL,"Pool Corp",337.38,"Consumer Discretionary","Leisure & Recreational Prdcts",2023-03-29,+11.59%,+582.19%,0.93,12803624000,6179730000,748460000,18.55,1.22%,-23.37%
+PPG,"PPG Industries",128.24,"Basic Materials","Chemical - Specialty",2023-03-29,+1.99%,+88.47%,1.17,29706888000,17652000000,1026000000,6.06,1.96%,-1.01%
+PPL,"PPL Corp",27.53,Utilities,"Utility - Electric Power",2023-03-29,-5.78%,-13.48%,0.77,19956606000,7902000000,756000000,1.4,3.54%,-0.86%
+PRU,"Prudential Financial Inc",81.19,Finance,"Insurance - Multi Line",2023-03-29,-18.37%,+34.60%,1.41,29137736000,60050000000,-1438000000,9.46,6.30%,-32.38%
+PSA,"Public Storage",290.24,Finance,"REIT - Equity Trust Other",2023-03-29,+3.59%,+85.14%,0.44,49563476000,4182160000,4349150000,22.78,4.26%,-24.29%
+PSX,"Phillips 66",100.28,Oils-Energy,"Oil - Refining and Marketing",2023-03-29,-3.65%,+41.17%,1.37,45824736000,169990000000,11024000000,18.55,4.25%,+21.86%
+PTC,"Ptc Inc",124.71,"Computers and Technology","Computer - Software",2023-03-29,+3.89%,N/A,1.18,14574732000,1933350000,313080000,3.44,0.00%,+15.53%
+PWR,"Quanta Services",165.46,"Industrial Products","Engineering & R&D Services",2023-03-29,+16.11%,+471.31%,1.08,23512484000,17073900000,491190000,5.82,0.20%,+22.07%
+PXD,"Pioneer Natural Resources Company",202.28,Oils-Energy,"Oil - US Exploration & Product",2023-03-29,-11.43%,+59.17%,1.41,46476740000,24294000000,7845000000,30.49,2.22%,-20.05%
+PYPL,"Paypal Holdings",74.18,"Computers and Technology","Internet - Software",2023-03-29,+4.16%,N/A,1.31,82250816000,27518000000,2419000000,3.07,0.00%,-36.15%
+QCOM,"Qualcomm Inc",125.09,"Computers and Technology","Wireless Equipment",2023-03-29,+13.78%,+81.27%,1.28,135294096000,44200000000,12936000000,10.12,2.47%,-21.05%
+QRVO,"Qorvo Inc",100.19,"Computers and Technology","Semi Radio Frequency",2023-03-29,+10.54%,N/A,1.48,9750164000,4645710000,1033350000,7.93,0.00%,-22.25%
+RCL,"Royal Caribbean Cruises Ltd",64.15,"Consumer Discretionary","Leisure & Recreation Services",2023-03-29,+29.78%,+86.24%,2.46,15798565000,8840540000,-2155960000,-7.51,0.00%,-18.32%
+RE,"Everest Re Group",359.02,Finance,"Insurance - Proprty & Casualty",2023-03-29,+8.38%,+172.51%,0.6,13856880000,12060000000,597000000,27.03,1.87%,+20.57%
+REG,"Regency Centers Corp",59.21,Finance,"REIT - Equity Trust Retail",2023-03-29,-5.26%,+10.40%,1.15,10006099000,1224020000,482870000,2.75,4.45%,-14.41%
+REGN,"Regeneron Pharmaceuticals",819.35,Medical,"Medical - Biomedical",2023-03-29,+13.56%,+368.80%,0.21,90409312000,12172900000,4338400000,42.2,0.00%,+18.16%
+RF,"Regions Financial Corp",18.66,Finance,"Banks - Southeast",2023-03-29,-13.45%,+123.57%,1.22,17111830000,7531000000,2245000000,2.37,4.37%,-18.98%
+RHI,"Robert Half International Inc",77.15,"Business Services",Staffing,2023-03-29,+4.50%,+103.30%,1.32,8217357000,7238140000,657920000,6.02,2.52%,-34.14%
+RJF,"Raymond James Financial",93.37,Finance,"Finance - Investment Brokers",2023-03-29,-12.62%,+198.50%,1.05,19756392000,11003000000,1509000000,7.53,1.83%,-16.12%
+RL,"Ralph Lauren Corp",116.62,"Consumer Staples","Textile - Apparel",2023-03-29,+10.36%,-31.72%,1.37,7627171000,6218500000,600100000,7.95,2.60%,-2.09%
+RMD,"Resmed Inc",213.52,Medical,"Medical Products",2023-03-29,+2.59%,+359.64%,0.48,31304838000,3578130000,779440000,5.98,0.83%,-11.94%
+ROK,"Rockwell Automation Inc",284.54,"Computers and Technology","Industrial Robotics",2023-03-29,+10.47%,+222.85%,1.44,31998922000,7760400000,932200000,9.82,1.69%,+1.53%
+ROL,"Rollins Inc",37.01,Construction,"Building - Maint & Service",2023-03-29,+1.29%,+406.59%,0.65,18157616000,2695820000,368600000,0.74,1.41%,+7.52%
+ROP,"Roper Industries",434.34,"Computers and Technology","IT Services",2023-03-29,+0.52%,+239.33%,1.03,45896968000,5371800000,4544700000,15.31,0.63%,-8.03%
+ROST,"Ross Stores Inc",102.47,Retail-Wholesale,"Retail - Discount",2023-03-29,-11.72%,+240.28%,0.98,35518424000,18695830000,1512040000,4.39,1.30%,+11.92%
+RSG,"Republic Services",132.96,"Business Services","Waste Removal Svcs",2023-03-29,+3.08%,+297.91%,0.65,41499080000,13511300000,1487600000,4.93,1.51%,-0.08%
+RTX,"Raytheon Technologies Corp",97.7,Aerospace,"Aerospace - Defense Equipment",2023-03-29,-3.19%,+75.61%,1,141638544000,67074000000,5197000000,4.79,2.27%,-3.83%
+SBAC,"SBA Communications",254.17,Finance,"REIT - Equity Trust Other",2023-03-29,-9.33%,+248.24%,0.49,27088618000,2633450000,461430000,4.21,1.36%,-23.88%
+SBUX,"Starbucks Corp",100.62,Retail-Wholesale,"Retail - Restaurants",2023-03-29,+1.43%,+246.69%,0.94,113458896000,32250300000,3281600000,2.99,2.15%,+13.85%
+SCHW,"The Charles Schwab Corp",55.21,Finance,"Finance - Investment Brokers",2023-03-29,-33.69%,+204.41%,0.93,96469472000,20762000000,7183000000,3.91,1.86%,-39.86%
+SEDG,"Solaredge Tech",291.94,Oils-Energy,Solar,2023-03-29,+3.06%,N/A,1.43,15597634000,3110280000,93780000,3.51,0.00%,-12.35%
+SEE,"Sealed Air Corp",44.25,"Industrial Products","Containers - Paper Products",2023-03-29,-11.29%,+81.09%,1.24,6285381000,5641900000,491600000,4.1,1.83%,-36.24%
+SHW,"Sherwin-Williams Company",215.32,Construction,"Paint & Related Products",2023-03-29,-9.27%,+276.08%,1.07,54634984000,22148900000,2020100000,8.74,1.14%,-14.07%
+SJM,"J.M. Smucker Company",157.57,"Consumer Staples","Food - Misc & Diversified",2023-03-29,-0.56%,+57.79%,0.21,16684270000,7998900000,631700000,8.51,2.61%,+17.64%
+SLB,"Schlumberger N.V.",48.7,Oils-Energy,"Oil - Field Services",2023-03-29,-8.90%,-36.39%,1.77,68038968000,28091000000,3441000000,2.18,2.10%,+16.70%
+SNA,"Snap-On Inc",241.55,"Consumer Discretionary","Tools - Hand Held",2023-03-29,+5.72%,+189.32%,1.1,12712176000,4492800000,911700000,16.83,2.71%,+17.34%
+SNPS,"Synopsys Inc",375.04,"Computers and Technology","Computer - Software",2023-03-29,+17.46%,+930.85%,1.18,56331940000,5081540000,984590000,6.06,0.00%,+12.83%
+SO,"Southern Company",69.34,Utilities,"Utility - Electric Power",2023-03-29,-2.90%,+45.76%,0.49,74470416000,29279000000,3535000000,3.61,3.98%,-2.34%
+SPG,"Simon Property Group",106.59,Finance,"REIT - Equity Trust Retail",2023-03-29,-9.27%,-34.32%,1.52,34049864000,5291450000,2139540000,6.52,6.91%,-19.10%
+SPGI,"S&P Global Inc",338.13,"Business Services","Business Information",2023-03-29,+0.95%,+541.57%,1.12,109576928000,11181000000,3248000000,11.17,1.08%,-18.42%
+SRE,Sempra,148.45,Utilities,"Utility - Gas Distribution",2023-03-29,-3.94%,+81.95%,0.72,45754060000,14439000000,2139000000,9.21,3.27%,-8.99%
+STE,"Steris Corp",187.46,Medical,"Medical Instruments",2023-03-29,+1.50%,+345.35%,0.85,18398316000,4585060000,243890000,7.95,1.01%,-23.01%
+STLD,"Steel Dynamics Inc",110.46,"Basic Materials","Steel - Producers",2023-03-29,+13.06%,+587.85%,1.51,18741466000,22260770000,3862670000,22.58,1.25%,+26.72%
+STT,"State Street Corp",75.45,Finance,"Banks - Major Regional",2023-03-29,-2.73%,+24.59%,1.59,25360544000,13692000000,2774000000,7.42,3.42%,-16.27%
+STX,"Seagate Technology Hldgs Plc",63.79,"Business Services","Technology Services",2023-03-29,+21.25%,+65.29%,1.07,12477828000,11661000000,1649000000,3.43,4.63%,-30.96%
+STZ,"Constellation Brands Inc",223.68,"Consumer Staples","Beverages - Alcohol",2023-03-29,-3.48%,+360.29%,1.75,40468344000,8820700000,-40400000,11.03,1.46%,-2.48%
+SWK,"Stanley Black & Decker Inc",77.91,"Industrial Products","Machinery - Tools & Related",2023-03-29,+3.71%,-5.20%,1.31,11748501000,16947400000,170100000,4.53,4.17%,-44.74%
+SWKS,"Skyworks Solutions",116.48,"Computers and Technology","Semi Radio Frequency",2023-03-29,+27.82%,+414.53%,1.29,18011752000,5485500000,1275200000,9.53,2.19%,-15.02%
+SYF,"Synchrony Financial",28.65,Finance,"Finance - Misc Services",2023-03-29,-12.81%,N/A,1.62,12306906000,17526000000,3016000000,6.06,3.27%,-20.08%
+SYK,"Stryker Corp",279.03,Medical,"Medical Products",2023-03-29,+14.13%,+325.21%,0.93,105091512000,18449000000,2358000000,9.34,1.08%,+3.30%
+SYY,"Sysco Corp",77.39,"Consumer Staples","Food - Misc & Diversified",2023-03-29,+1.23%,+117.12%,1.1,38760644000,68636150000,1358770000,3.63,2.57%,-4.39%
+T,"AT&T Inc",19,Utilities,"Wireless National",2023-03-29,+3.20%,-32.40%,0.66,133471160000,120741000000,-8524000000,2.71,5.93%,+5.47%
+TAP,"Molson Coors Brewing Company",51.95,"Consumer Staples","Beverages - Alcohol",2023-03-29,+0.83%,+5.05%,0.83,11117358000,10701000000,-175300000,4.1,3.19%,-2.62%
+TDG,"Transdigm Group Inc",732.25,Aerospace,"Aerospace - Defense Equipment",2023-03-29,+16.29%,+370.70%,1.36,39299084000,5429000000,866000000,16.54,0.00%,+9.52%
+TDY,"Teledyne Technologies Inc",433.91,Aerospace,"Aerospace - Defense Equipment",2023-03-29,+8.50%,+446.77%,1.08,20155682000,5458600000,788600000,18.18,0.00%,-7.84%
+TECH,"Bio-Techne Cp",72.06,Medical,"Medical - Biomedical",2023-03-29,-13.06%,+322.23%,1.24,11264035000,1105600000,272050000,1.7,0.45%,-34.09%
+TEL,"Te Connectivity Ltd",127.36,"Computers and Technology","Electronics - Misc Components",2023-03-29,+10.94%,+196.78%,1.32,39379912000,16281000000,2428000000,7.08,1.80%,-3.10%
+TER,"Teradyne Inc",107.39,"Computers and Technology","Electronic Test Equipment",2023-03-29,+22.94%,+542.48%,1.55,16261762000,3155050000,715500000,4.26,0.42%,-12.66%
+TFC,"Truist Financial Corp",34.47,Finance,"Banks - Major Regional",2023-03-29,-19.89%,+6.47%,1.1,44386436000,25356000000,6260000000,4.97,6.22%,-42.13%
+TFX,"Teleflex Inc",246.33,Medical,"Medical Instruments",2023-03-29,-1.32%,+191.52%,0.98,11565124000,2791040000,363140000,13.06,0.55%,-28.59%
+TGT,"Target Corp",158.11,Retail-Wholesale,"Retail - Discount",2023-03-29,+6.09%,+133.41%,1.05,73552360000,109120000000,2780000000,6.01,2.70%,-27.97%
+TJX,"TJX Companies",76.55,Retail-Wholesale,"Retail - Discount",2023-03-29,-3.83%,+226.03%,0.91,88060960000,49936000000,3498000000,3.12,1.55%,+23.47%
+TMO,"Thermo Fisher Scientific Inc",555.15,Medical,"Medical Instruments",2023-03-29,+0.81%,+624.58%,0.79,213616864000,44915000000,6950000000,23.24,0.25%,-4.81%
+TMUS,"T-Mobile US",143.81,Utilities,"Wireless National",2023-03-29,+2.72%,+555.00%,0.56,174115696000,79571000000,2590000000,3.58,0.00%,+13.69%
+TPR,"Tapestry Inc",41.94,Retail-Wholesale,"Retail - Apparel & Shoes",2023-03-29,+10.14%,-16.52%,1.43,9851451000,6684500000,856300000,3.44,2.88%,+9.22%
+TRGP,"Targa Resources",71.16,Oils-Energy,"Oil Refining & Marketing MLP",2023-03-29,-3.18%,+3.38%,2.29,15923658000,20929800000,1142300000,3.89,1.99%,-4.74%
+TRMB,"Trimble Navigation",51.44,"Computers and Technology","Electronics Products - Misc",2023-03-29,+1.74%,+66.44%,1.58,12322905000,3676300000,449700000,2.23,0.00%,-28.41%
+TROW,"T Rowe Price Group",110.65,Finance,"Finance - Investment Mgmt",2023-03-29,+1.46%,+44.41%,1.3,24274456000,6488400000,1557900000,8.01,4.51%,-26.37%
+TRV,"The Travelers Companies Inc",169.86,Finance,"Insurance - Proprty & Casualty",2023-03-29,-9.40%,+97.03%,0.61,38499752000,36884000000,2842000000,12.39,2.24%,-9.05%
+TSCO,"Tractor Supply Company",230.44,Retail-Wholesale,"Retail - Misc & Diversified",2023-03-29,+2.43%,+340.81%,0.83,25262852000,14204720000,1088710000,9.71,1.80%,-0.77%
+TSLA,"Tesla Inc",193.88,Auto-Tires-Trucks,"Auto - Domestic",2023-03-29,+57.40%,"+7,389.71%",2.06,598616640000,81462000000,12583000000,3.62,0.00%,-46.73%
+TSN,"Tyson Foods",58.25,"Consumer Staples","Food - Meat Products",2023-03-29,-6.43%,+133.08%,0.75,20572964000,53282000000,3238000000,6.71,3.32%,-32.87%
+TT,"Trane Technologies Plc",185.1,"Business Services","Technology Services",2023-03-29,+10.12%,+232.10%,1,41849712000,15991700000,1756500000,7.37,1.64%,+18.06%
+TTWO,"Take-Two Interactive",116.67,"Consumer Discretionary","Toys & Game & Hobby",2023-03-29,+12.04%,+615.48%,0.7,19490398000,3504800000,418020000,2.45,0.00%,-25.45%
+TXN,"Texas Instruments",181.04,"Computers and Technology","Semi General",2023-03-29,+9.58%,+400.25%,1.04,160842512000,20028000000,8749000000,9.38,2.79%,-2.50%
+TXT,"Textron Inc",70.36,Aerospace,"Aerospace - Defense",2023-03-29,-0.62%,+133.41%,1.49,14170664000,12869000000,861000000,4.01,0.11%,-5.85%
+TYL,"Tyler Technologies",341.05,"Computers and Technology","Business Software Services",2023-03-29,+5.78%,+440.30%,0.81,13841670000,1850200000,164240000,5.67,0.00%,-22.19%
+UAL,"United Airlines Holdings Inc",43.47,Transportation,"Transportation - Airline",2023-03-29,+15.31%,+32.49%,1.43,13872014000,44955000000,737000000,2.46,0.00%,-0.89%
+UDR,"United Dominion Realty Trust",39.39,Finance,"REIT - Equity Trust Resident",2023-03-29,+1.70%,+58.62%,0.75,12630099000,1517390000,86920000,0.29,3.96%,-31.72%
+UHS,"Universal Health Services",124.12,Medical,"Medical - Hospitals",2023-03-29,-11.90%,+93.66%,1.25,8741171000,13399370000,675610000,9.91,0.65%,-16.90%
+ULTA,"Ulta Beauty Inc",526.33,Retail-Wholesale,"Retail - Misc & Diversified",2023-03-29,+12.21%,+554.19%,1.3,26693192000,10208580000,1242410000,24.02,0.00%,+33.09%
+UNH,"Unitedhealth Group Inc",466.59,Medical,"Medical - HMO",2023-03-29,-11.99%,+726.04%,0.69,440844800000,324162000000,20120000000,22.19,1.40%,-9.08%
+UNP,"Union Pacific Corp",199.09,Transportation,"Transportation - Rail",2023-03-29,-3.85%,+176.08%,1.1,120281992000,24875000000,6998000000,11.36,2.65%,-27.69%
+UPS,"United Parcel Service",191.47,Transportation,"Transportation - Air Freight",2023-03-29,+10.14%,+118.54%,1.08,161211456000,100338000000,11548000000,12.95,3.45%,-12.79%
+URI,"United Rentals",384.11,Construction,"Building & Construction - Misc",2023-03-29,+8.07%,+582.14%,1.85,26017296000,11642000000,2105000000,32.6,0.39%,+5.70%
+USB,"U.S. Bancorp",36.22,Finance,"Banks - Major Regional",2023-03-29,-16.95%,+4.80%,0.98,54470456000,27401000000,5825000000,4.46,5.40%,-36.13%
+V,"Visa Inc",223.3,"Business Services","Financial Transaction Services",2023-03-29,+7.48%,+418.91%,0.97,414440704000,29310000000,14957000000,7.88,0.82%,+1.15%
+VFC,"V.F. Corp",21.75,"Consumer Staples","Textile - Apparel",2023-03-29,-21.22%,-49.42%,1.43,8243415000,11841840000,1386940000,2.39,5.66%,-62.13%
+VICI,"Vici Properties Inc",31.7,Finance,"REIT - Equity Trust Other",2023-03-29,-2.16%,N/A,0.95,31692710000,2600700000,1117640000,1.8,4.94%,+13.78%
+VLO,"Valero Energy Corp",136.95,Oils-Energy,"Oil - Refining and Marketing",2023-03-29,+7.95%,+199.01%,1.65,50483960000,176383000000,11528000000,29.26,3.00%,+42.11%
+VMC,"Vulcan Materials Company",169.99,Construction,"Building - CMT & CNT & AG",2023-03-29,-2.92%,+225.03%,0.76,22344948000,7315200000,575600000,5.12,1.02%,-9.24%
+VRSK,"Verisk Analytics Inc",190.25,"Business Services","Business Information",2023-03-29,+7.84%,+204.59%,0.84,29034890000,2497000000,953900000,5.76,0.72%,-10.09%
+VRSN,"Verisign Inc",205.37,"Computers and Technology","Internet Software Services",2023-03-29,-0.03%,+331.82%,1,21407900000,1424900000,673800000,6.25,0.00%,-6.54%
+VRTX,"Vertex Pharmaceutic",314.24,Medical,"Medical - Biomedical",2023-03-29,+8.82%,+469.86%,0.49,80533752000,8930700000,3322000000,13.36,0.00%,+22.88%
+VTR,"Ventas Inc",43.98,Finance,"REIT - Equity Trust Other",2023-03-29,-2.38%,-41.17%,1.19,17223742000,4129190000,-47450000,-0.12,4.18%,-29.60%
+VTRS,"Viatris Inc",9.53,Medical,"Medical Services",2023-03-29,-14.38%,N/A,1.18,11405636000,16262700000,2078600000,3.36,5.04%,-12.57%
+VZ,"Verizon Communications Inc",38.48,Utilities,"Wireless National",2023-03-29,-2.34%,-22.69%,0.36,159595552000,136835000000,21256000000,5.17,6.87%,-24.80%
+WAB,"Wabtec Corp",99.36,Transportation,"Transportation - Equip & Lease",2023-03-29,-0.45%,+92.60%,1.48,17734012000,8362000000,633000000,4.88,0.69%,+1.11%
+WAT,"Waters Corp",300.47,"Computers and Technology","Industrial Scientific",2023-03-29,-12.29%,+218.95%,0.86,17655496000,2971960000,707760000,12.03,0.00%,-8.34%
+WBA,"Walgreens Boots Alliance",34.15,Retail-Wholesale,"Retail - Drug Stores",2023-03-29,-8.59%,-29.07%,0.72,29169884000,132703000000,4336000000,4.51,5.68%,-27.63%
+WBD,"Discovery Inc Series A",14.66,"Consumer Discretionary","Broadcast - Radio & TV",2023-03-29,+54.64%,N/A,1.5,35186832000,33817000000,-7371000000,1.17,0.00%,N/A
+WDC,"Western Digital Cp",36.6,"Computers and Technology","Computer - Storage Devices",2023-03-29,+16.01%,-31.18%,1.68,11051734000,18793000000,1500000000,2.21,0.00%,-27.81%
+WEC,"Wisconsin Energy Corp",94.34,Utilities,"Utility - Electric Power",2023-03-29,+0.62%,+117.35%,0.38,29404850000,9597400000,1409300000,4.46,3.35%,-4.27%
+WELL,"Welltower Inc",69.96,Finance,"REIT - Equity Trust Other",2023-03-29,+6.73%,+1.27%,1.05,33741588000,5860620000,141210000,0.32,3.55%,-27.32%
+WFC,"Wells Fargo & Company",37.97,Finance,"Banks - Major Regional",2023-03-29,-8.04%,+0.51%,1.17,140432128000,82859000000,13182000000,3.59,3.23%,-26.71%
+WHR,"Whirlpool Corp",128.75,"Consumer Discretionary","Appliances - Household",2023-03-29,-8.98%,+7.23%,1.5,6924533000,19724000000,-1519000000,19.66,5.51%,-29.45%
+WM,"Waste Management",157.04,"Business Services","Waste Removal Svcs",2023-03-29,+0.10%,+294.85%,0.72,63190096000,19698000000,2238000000,5.59,1.81%,-0.71%
+WMB,"Williams Companies",29.27,Oils-Energy,"Oil - Production & Pipeline",2023-03-29,-11.03%,-22.93%,1.17,35187104000,10965000000,2049000000,1.82,6.20%,-12.10%
+WMT,"Walmart Inc",144.23,Retail-Wholesale,"Retail - Supermarket",2023-03-29,+1.72%,+91.92%,0.48,387123168000,611289000000,11680000000,6.28,1.59%,-1.21%
+WRB,"W.R. Berkley Corp",61.99,Finance,"Insurance - Proprty & Casualty",2023-03-29,-14.58%,+211.51%,0.62,16183489000,11166500000,1381060000,4.39,0.65%,-6.44%
+WRK,"Westrock Company",29.75,"Basic Materials","Paper & Related Products",2023-03-29,-15.39%,N/A,1.2,7407826000,21256500000,944600000,4.69,3.78%,-37.38%
+WST,"West Pharmaceutical Services",337.98,Medical,"Medical - Dental Suppliers",2023-03-29,+43.61%,+946.54%,1.08,25237684000,2886900000,585900000,8.57,0.22%,-16.89%
+WTW,"Willis Towers Watson Public Ltd",230.4,Finance,"Insurance - Brokers",2023-03-29,-5.80%,+230.91%,0.76,24447928000,8866000000,1009000000,13.51,1.43%,-4.34%
+WY,"Weyerhaeuser Company",29.07,Construction,"Building Products - Wood",2023-03-29,-6.23%,-9.43%,1.47,20813302000,10184000000,1880000000,3.03,2.67%,-24.57%
+WYNN,"Wynn Resorts Ltd",109.05,"Consumer Discretionary",Gaming,2023-03-29,+32.23%,-14.34%,2.01,12187846000,3756830000,-423860000,-4.46,0.00%,+36.09%
+XEL,"XCEL Energy Inc",66.54,Utilities,"Utility - Electric Power",2023-03-29,-5.09%,+120.20%,0.41,35959992000,15310000000,1736000000,3.17,3.18%,-6.60%
+XOM,"Exxon Mobil Corp",108.96,Oils-Energy,"Oil - International Integrated",2023-03-29,-1.21%,+18.88%,1.09,436083904000,413680000000,55740000000,14.06,3.40%,+31.58%
+XRAY,"Dentsply Sirona Inc",37.72,Medical,"Medical - Dental Suppliers",2023-03-29,+18.47%,-11.05%,0.92,8129915000,3922000000,-950000000,1.39,1.32%,-24.32%
+XYL,"Xylem Inc",101.48,"Industrial Products","Machinery - General Industrial",2023-03-29,-8.22%,+262.74%,1.07,18022390000,5522000000,355000000,2.84,1.32%,+16.85%
+YUM,"Yum! Brands",128.41,Retail-Wholesale,"Retail - Restaurants",2023-03-29,+0.26%,+148.28%,0.98,35993876000,6842000000,1325000000,4.5,1.88%,+5.96%
+ZBH,"Zimmer Biomet Holdings",126.74,Medical,"Medical Products",2023-03-29,-0.60%,+67.69%,1,26360738000,6939900000,231400000,6.89,0.76%,+0.84%
+ZBRA,"Zebra Technologies",296.12,"Industrial Products","Machinery - Thermal Processing",2023-03-29,+15.49%,+515.64%,1.66,14915158000,5781000000,463000000,16.06,0.00%,-29.88%
+ZION,"Zions Bancorp",31.04,Finance,"Banks - West",2023-03-29,-36.86%,+19.85%,1.17,4435565000,3337000000,907000000,5.8,5.48%,-55.49%
+ZTS,"Zoetis Inc Cl A",162.66,Medical,"Medical - Drugs",2023-03-29,+10.99%,+394.13%,0.76,76477384000,8080000000,2114000000,4.88,0.91%,-14.10%
+"Downloaded from Barchart.com as of 03-29-2023 07:03pm CDT"
