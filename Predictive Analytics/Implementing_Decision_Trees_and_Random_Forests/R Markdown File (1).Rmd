@@ -1,0 +1,110 @@
+---
+title: "Decision Trees and Random Forests"
+output:
+  pdf_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(message = FALSE)
+knitr::opts_chunk$set(warning = FALSE)
+```
+
+***Problem Statement:***
+*This project involves building decision tree and random forest models to answer a number of questions. We will use the Carseats dataset that is part of the ISLR package.*
+
+**Loading Required Libraries**
+```{r}
+
+library(ISLR)
+
+library(dplyr)
+
+library(glmnet)
+
+library(caret)
+
+library(rpart)
+
+library(rpart.plot)
+
+library(rattle)
+```
+
+```{r}
+summary(Carseats)
+```
+
+**Selecting required attributes**
+```{r}
+Carseats_Filtered = Carseats %>% select("Sales", "Price", 
+"Advertising","Population","Age","Income","Education")
+summary(Carseats_Filtered)
+```
+
+
+**Developing a decision tree regression model to forecast Sales using required attributes.("Price", "Advertising", "Population", "Age", "Income" and "Education").**
+
+```{r}
+model_1 = rpart(Sales~.,data=Carseats_Filtered,method = 'anova')
+summary(model_1)
+```
+
+```{r}
+fancyRpartPlot(model_1)
+```
+*The price attribute is utilized at the root node of the tree for the purpose of splitting.*
+
+
+**Considering the following input: Sales=15,Price=8.71,Population=120,Advertising=0,Age=71,Income= 110,Education=10.Estimating Sales for this record using the decision tree model**
+
+```{r}
+
+prediction_data = data.frame(Price=8.71,Population=120,Advertising=0,Age=71
+,Income= 110, Education= 10)
+
+
+prediction<- predict(model_1,prediction_data)
+
+prediction
+
+```
+
+
+
+*Predicted sales value for this record is 9.58625.*
+
+**Using the caret function to train a random forest (method=’rf’) for the same dataset.**
+
+```{r}
+
+set.seed(123)
+model_2 <- train(Sales~.,
+               data= Carseats_Filtered,
+               method = "rf")
+
+# Print the results
+model_2
+
+```
+
+*Best results are obtained when mtry value is set to be 2.*
+
+**Customizing the search grid by checking the model’s performance for mtry values of 2, 3 and 5 using 3 repeats of 5-fold cross validation.**
+```{r}
+
+set.seed(123)
+
+#Cross-Validation
+control <- trainControl(method = "repeatedcv",
+                     repeats = 3,
+                     number = 5)
+
+#Defining search grid with mtry values of 2,3,5
+search_grid <- expand.grid(mtry = c(2, 3, 5))
+
+
+# Training the model using the search grid and cross-validation
+model <- train(Sales~., Carseats_Filtered,method = "rf",tuneGrid = search_grid,trControl = control)
+print(model)
+```
