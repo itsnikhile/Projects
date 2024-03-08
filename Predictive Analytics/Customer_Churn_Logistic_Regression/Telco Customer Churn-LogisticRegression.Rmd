@@ -1,0 +1,388 @@
+---
+title: "Customer Churn Prediction"
+output:
+  html_document:
+    df_print: paged
+  pdf_document: default
+date: "2024-03-08"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Regarding the Analysis: The main objective of this kernel is to improve and refine my skills in data analysis.
+
+#### This analysis specifically focuses on the behavior of telecom customers who are more inclined to discontinue their subscription. My aim is to identify the most significant patterns in customer behavior through exploratory data analysis (EDA) and subsequently utilize predictive analytics techniques to determine the customers who are at the highest risk of churning.
+
+## Regarding the data: (As provided in the overview/description)
+
+#### The data includes information about customers who have terminated their subscription within the last month, which is indicated by the "Churn" column. It also encompasses the services that each customer has subscribed to, such as phone, multiple lines, internet, online security, online backup, device protection, tech support, and streaming TV and movies.
+
+#### Additionally, the data contains customer account details, including the duration of their subscription, contract type, payment method, preference for paperless billing, monthly charges, and total charges.
+
+#### Furthermore, demographic information about customers is included, such as their gender, age range, and whether they have partners and dependents.
+
+```{r cars}
+library(tidyverse) 
+library(MASS)
+library(car)
+library(e1071)
+library(caret)
+library(cowplot)
+library(caTools)
+library(pROC)
+library(ggcorrplot)
+```
+
+## Including Plots
+
+```{r}
+telco <- read.csv("WA_Fn-UseC_-Telco-Customer-Churn.csv")
+```
+
+#### 7043 observations with 21 variables.
+
+```{r}
+glimpse(telco)
+```
+
+```{r}
+telco <- telco[complete.cases(telco),]
+
+telco$SeniorCitizen <- as.factor(ifelse(telco$SeniorCitizen==1, 'YES', 'NO'))
+```
+
+### EXPLORATORY DATA ANALYSIS:
+
+```{r}
+theme1 <- theme_bw()+
+theme(axis.text.x = element_text(angle = 0, hjust = 1, vjust = 0.5),legend.position="none")
+theme2 <- theme_bw()+
+theme(axis.text.x = element_text(angle = 90, hjust = 1, vjust = 0.5),legend.position="none")
+```
+
+```{r}
+glimpse(telco)
+```
+
+## VISUALIZING THE CATEGORICAL DATA FIRST WITH RESPECT TO CHURN:
+
+-   CHURN columns tells us about the number of Customers who left within the last month.
+
+-   Around 26% of customers left the platform within the last month.
+
+```{r}
+options(repr.plot.width = 6, repr.plot.height = 4)
+telco %>% 
+group_by(Churn) %>% 
+summarise(Count = n())%>% 
+mutate(percent = prop.table(Count)*100)%>%
+ggplot(aes(reorder(Churn, -percent), percent), fill = Churn)+
+geom_col(fill = c("#FC4E07", "#E7B800"))+
+geom_text(aes(label = sprintf("%.2f%%", percent)), hjust = 0.01,vjust = -0.5, size =3)+ 
+theme_bw()+  
+xlab("Churn") + 
+ylab("Percent")+
+ggtitle("Churn Percent")
+```
+
+-   Gender - The churn percent is almost equal in case of Male and Females
+-   The percent of churn is higher in case of senior citizens
+-   Customers with Partners and Dependents have lower churn rate as compared to those who don't have \* partners & Dependents.
+
+```{r}
+options(repr.plot.width = 12, repr.plot.height = 8)
+plot_grid(ggplot(telco, aes(x=gender,fill=Churn))+ geom_bar()+ theme1, 
+          ggplot(telco, aes(x=SeniorCitizen,fill=Churn))+ geom_bar(position = 'fill')+theme1,
+          ggplot(telco, aes(x=Partner,fill=Churn))+ geom_bar(position = 'fill')+theme1,
+          ggplot(telco, aes(x=Dependents,fill=Churn))+ geom_bar(position = 'fill')+theme1,
+          ggplot(telco, aes(x=PhoneService,fill=Churn))+ geom_bar(position = 'fill')+theme1,
+          ggplot(telco, aes(x=MultipleLines,fill=Churn))+ geom_bar(position = 'fill')+theme_bw()+
+          scale_x_discrete(labels = function(x) str_wrap(x, width = 10)),
+          align = "h")
+```
+
+-   Churn rate is much higher in case of Fiber Optic InternetServices.
+-   Customers who do not have services like No OnlineSecurity , OnlineBackup and TechSupport have left the platform in the past month.
+
+```{r}
+options(repr.plot.width = 12, repr.plot.height = 8)
+plot_grid(ggplot(telco, aes(x=InternetService,fill=Churn))+ geom_bar(position = 'fill')+ theme1+
+          scale_x_discrete(labels = function(x) str_wrap(x, width = 10)), 
+          ggplot(telco, aes(x=OnlineSecurity,fill=Churn))+ geom_bar(position = 'fill')+theme1+
+          scale_x_discrete(labels = function(x) str_wrap(x, width = 10)),
+          ggplot(telco, aes(x=OnlineBackup,fill=Churn))+ geom_bar(position = 'fill')+theme1+
+          scale_x_discrete(labels = function(x) str_wrap(x, width = 10)),
+          ggplot(telco, aes(x=DeviceProtection,fill=Churn))+ geom_bar(position = 'fill')+theme1+
+          scale_x_discrete(labels = function(x) str_wrap(x, width = 10)),
+          ggplot(telco, aes(x=TechSupport,fill=Churn))+ geom_bar(position = 'fill')+theme1+
+          scale_x_discrete(labels = function(x) str_wrap(x, width = 10)),
+          ggplot(telco, aes(x=StreamingTV,fill=Churn))+ geom_bar(position = 'fill')+theme_bw()+
+          scale_x_discrete(labels = function(x) str_wrap(x, width = 10)),
+          align = "h")
+```
+
+* A larger percent of Customers with monthly subscription have left when compared to Customers with one or two year contract.
+* Churn percent is higher in case of cutsomers having paperless billing option.
+* Customers who have ElectronicCheck PaymentMethod tend to leave the platform more when compared to other options.
+
+```{r}
+plot_grid(ggplot(telco, aes(x=StreamingMovies,fill=Churn))+ 
+          geom_bar(position = 'fill')+ theme1+
+          scale_x_discrete(labels = function(x) str_wrap(x, width = 10)), 
+          ggplot(telco, aes(x=Contract,fill=Churn))+ 
+          geom_bar(position = 'fill')+theme1+
+          scale_x_discrete(labels = function(x) str_wrap(x, width = 10)),
+          ggplot(telco, aes(x=PaperlessBilling,fill=Churn))+ 
+          geom_bar(position = 'fill')+theme1+
+          scale_x_discrete(labels = function(x) str_wrap(x, width = 10)),
+          ggplot(telco, aes(x=PaymentMethod,fill=Churn))+
+          geom_bar(position = 'fill')+theme_bw()+
+          scale_x_discrete(labels = function(x) str_wrap(x, width = 10)),
+          align = "h")
+```
+
+### Analyzing the three continuous variables w.r.t CHURN:
+
+```{r}
+options(repr.plot.width =6, repr.plot.height = 2)
+ggplot(telco, aes(y= tenure, x = "", fill = Churn)) + 
+geom_boxplot()+ 
+theme_bw()+
+xlab(" ")
+```
+
+```{r}
+ggplot(telco, aes(y= MonthlyCharges, x = "", fill = Churn)) + 
+geom_boxplot()+ 
+theme_bw()+
+xlab(" ")
+```
+
+```{r}
+ggplot(telco, aes(y= TotalCharges, x = "", fill = Churn)) + 
+geom_boxplot()+ 
+theme_bw()+
+xlab(" ")
+```
+
+```{r}
+options(repr.plot.width =6, repr.plot.height = 4)
+telco_cor <- round(cor(telco[,c("tenure", "MonthlyCharges", "TotalCharges")]), 1)
+
+ggcorrplot(telco_cor,  title = "Correlation")+theme(plot.title = element_text(hjust = 0.5))
+```
+
+## Data Preparation:
+
+### Cleaning the Categorical features
+
+### From the EDA above, we know that there are some categorical features that have 'No' and 'No Internet Service' or 'No Phone Service' as a category, we can make them as 'No' and clean these features.
+```{r}
+telco <- data.frame(lapply(telco, function(x) {
+                  gsub("No internet service", "No", x)}))
+
+telco <- data.frame(lapply(telco, function(x) {
+                  gsub("No phone service", "No", x)}))
+```
+
+* Standardising Continuous features
+
+```{r}
+num_columns <- c("tenure", "MonthlyCharges", "TotalCharges")
+telco[num_columns] <- sapply(telco[num_columns], as.numeric)
+
+telco_int <- telco[,c("tenure", "MonthlyCharges", "TotalCharges")]
+telco_int <- data.frame(scale(telco_int))
+```
+
+### Creating derived features
+
+* I am trying to create a derived feature from tenure, where i have made different bins of tenure(which is in months) such as '0-1 year', '2-3 years', '3-4 years' etc.
+
+```{r}
+#max(telco$tenure)
+#min(telco$tenure)
+telco <- mutate(telco, tenure_bin = tenure)
+
+telco$tenure_bin[telco$tenure_bin >=0 & telco$tenure_bin <= 12] <- '0-1 year'
+telco$tenure_bin[telco$tenure_bin > 12 & telco$tenure_bin <= 24] <- '1-2 years'
+telco$tenure_bin[telco$tenure_bin > 24 & telco$tenure_bin <= 36] <- '2-3 years'
+telco$tenure_bin[telco$tenure_bin > 36 & telco$tenure_bin <= 48] <- '3-4 years'
+telco$tenure_bin[telco$tenure_bin > 48 & telco$tenure_bin <= 60] <- '4-5 years'
+telco$tenure_bin[telco$tenure_bin > 60 & telco$tenure_bin <= 72] <- '5-6 years'
+
+telco$tenure_bin <- as.factor(telco$tenure_bin)
+```
+
+#### After checking the distribution of data in each tenure bin, we found that maximum number of customers have a tenure of either 0-1 years and followed by 5-6 years.
+
+```{r}
+options(repr.plot.width =6, repr.plot.height = 3)
+ggplot(telco, aes(tenure_bin, fill = tenure_bin)) + geom_bar()+ theme1
+```
+
+#### Creating Dummy Variables
+
+```{r}
+telco_cat <- telco[,-c(1,6,19,20)]
+
+#Creating Dummy Variables
+dummy<- data.frame(sapply(telco_cat,function(x) data.frame(model.matrix(~x-1,data =telco_cat))[,-1]))
+
+head(dummy)
+```
+
+#### Creating the final dataset by combining the numeric and dummy data frames.
+
+```{r}
+#Combining the data
+telco_final <- cbind(telco_int,dummy)
+head(telco_final)
+```
+
+#### Splitting the data into train and validation data.
+
+```{r}
+#Splitting the data
+set.seed(123)
+indices = sample.split(telco_final$Churn, SplitRatio = 0.7)
+train = telco_final[indices,]
+validation = telco_final[!(indices),]
+```
+
+### Model Building with Logistic Regression
+
+```{r}
+#Build the first model using all variables
+model_1 = glm(Churn ~ ., data = train, family = "binomial")
+summary(model_1)
+```
+
+#### The Variance Inflation Factor (VIF) is a tool utilized to assess the level of multicollinearity among predictor variables within a model. A predictor with a VIF of 2 or lower is typically deemed acceptable, indicating minimal correlation with other predictors. Conversely, a higher VIF suggests a stronger correlation with other predictors. It is important to note that predictors with elevated VIF values may exhibit high p-values, indicating significance. Therefore, it is crucial to evaluate the significance of predictor variables before considering their removal from the model.
+
+```{r}
+model_2<- stepAIC(model_1, direction="both")
+summary(model_2)
+```
+
+```{r}
+vif(model_2)
+```
+
+```{r}
+#Removing DeviceProtection due to high p-value 
+model_3 <-glm(formula = Churn ~ tenure + MonthlyCharges + SeniorCitizen + 
+    Partner + InternetService.xFiber.optic + InternetService.xNo + 
+    OnlineSecurity + OnlineBackup + TechSupport + 
+    StreamingTV + Contract.xOne.year + Contract.xTwo.year + PaperlessBilling + 
+    PaymentMethod.xElectronic.check + tenure_bin.x1.2.years + 
+    tenure_bin.x5.6.years, family = "binomial", data = train)
+summary(model_3)
+vif(model_3)
+```
+
+```{r}
+#Removing StreamingTV  as it has high p-value 
+
+model_4 <- glm(formula = Churn ~ tenure + MonthlyCharges + SeniorCitizen + 
+    Partner + InternetService.xFiber.optic + InternetService.xNo + 
+    OnlineSecurity + OnlineBackup + TechSupport +  
+    Contract.xOne.year + Contract.xTwo.year + PaperlessBilling + 
+    PaymentMethod.xElectronic.check + tenure_bin.x1.2.years + 
+    tenure_bin.x5.6.years, family = "binomial", data = train)
+
+summary(model_4)
+vif(model_4)
+```
+
+#### Model_3 all has significant variables, so let's just use it for prediction first
+
+```{r}
+final_model <- model_3
+```
+
+### Model Evaluation using the validation data:
+
+```{r}
+pred <- predict(final_model, type = "response", newdata = validation[,-24])
+summary(pred)
+validation$prob <- pred
+
+# Using probability cutoff of 50%.
+
+pred_churn <- factor(ifelse(pred >= 0.50, "Yes", "No"))
+actual_churn <- factor(ifelse(validation$Churn==1,"Yes","No"))
+table(actual_churn,pred_churn)
+```
+
+#### Let's find the Accuracy, Sensitivity, Specificity using 50% cutoff
+
+```{r}
+cutoff_churn <- factor(ifelse(pred >=0.50, "Yes", "No"))
+conf_final <- confusionMatrix(cutoff_churn, actual_churn, positive = "Yes")
+accuracy <- conf_final$overall[1]
+sensitivity <- conf_final$byClass[1]
+specificity <- conf_final$byClass[2]
+accuracy
+sensitivity
+specificity
+```
+
+#### As we can see above, when we are using a cutoff of 0.50, we are getting a good accuracy and specificity, but the sensitivity is very less. Hence, we need to find the optimal probalility cutoff which will give maximum accuracy, sensitivity and specificity
+
+```{r}
+perform_fn <- function(cutoff) 
+{
+  predicted_churn <- factor(ifelse(pred >= cutoff, "Yes", "No"))
+  conf <- confusionMatrix(predicted_churn, actual_churn, positive = "Yes")
+  accuray <- conf$overall[1]
+  sensitivity <- conf$byClass[1]
+  specificity <- conf$byClass[2]
+  out <- t(as.matrix(c(sensitivity, specificity, accuray))) 
+  colnames(out) <- c("sensitivity", "specificity", "accuracy")
+  return(out)
+}
+```
+
+```{r}
+options(repr.plot.width =8, repr.plot.height =6)
+summary(pred)
+s = seq(0.01,0.80,length=100)
+OUT = matrix(0,100,3)
+
+for(i in 1:100)
+{
+  OUT[i,] = perform_fn(s[i])
+} 
+
+plot(s, OUT[,1],xlab="Cutoff",ylab="Value",cex.lab=1.5,cex.axis=1.5,ylim=c(0,1),
+     type="l",lwd=2,axes=FALSE,col=2)
+axis(1,seq(0,1,length=5),seq(0,1,length=5),cex.lab=1.5)
+axis(2,seq(0,1,length=5),seq(0,1,length=5),cex.lab=1.5)
+lines(s,OUT[,2],col="darkgreen",lwd=2)
+lines(s,OUT[,3],col=4,lwd=2)
+box()
+legend("bottom",col=c(2,"darkgreen",4,"darkred"),text.font =3,inset = 0.02,
+       box.lty=0,cex = 0.8, 
+       lwd=c(2,2,2,2),c("Sensitivity","Specificity","Accuracy"))
+abline(v = 0.32, col="red", lwd=1, lty=2)
+axis(1, at = seq(0.1, 1, by = 0.1))
+
+#cutoff <- s[which(abs(OUT[,1]-OUT[,2])<0.01)]
+```
+#### Let's choose a cutoff value of 0.32 for final model, where the three curves for accuracy, specificty and sensitivity meet
+
+
+```{r}
+cutoff_churn <- factor(ifelse(pred >=0.32, "Yes", "No"))
+conf_final <- confusionMatrix(cutoff_churn, actual_churn, positive = "Yes")
+accuracy <- conf_final$overall[1]
+sensitivity <- conf_final$byClass[1]
+specificity <- conf_final$byClass[2]
+accuracy
+sensitivity
+specificity
+```
+Logistic Regression with a cutoff probability value of 0.32 gives us better values of accuracy, sensitivity and specificity in the validation data.
