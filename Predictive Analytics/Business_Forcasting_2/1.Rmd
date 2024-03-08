@@ -1,0 +1,356 @@
+---
+title: "Business Forcasting"
+output:
+  html_document: default
+  pdf_document: default
+date: "09/20/2023"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+We will be using gapminder data to look at info about GDP, life expectancy, and other parameters.
+
+```{r}
+remove(list=ls())
+library(tidyverse) ; library(gapminder)
+
+table(gapminder$year)
+table(gapminder$country)
+table(gapminder$continent)
+```
+
+> Find the data for 2002
+
+```{r}
+data_2002 <- gapminder %>%
+  filter(year == 2002)
+data_2002
+```
+
+> Find the data for Brazil in 2002. What is the life expectancy?
+
+**Life Expectancy is 71.006**
+
+```{r}
+brazil_2002b <- gapminder %>% 
+  filter(year == "2002",country == "Brazil")
+brazil_2002b
+
+```
+
+> Find which country has the lowest lifeExp.
+
+**Country has the lowest lifeExp is Rwanda**
+
+```{r}
+low_lifeExp <- gapminder %>% 
+  arrange(lifeExp)
+low_lifeExp
+```
+
+> Find which country has the lowest lifeExp in 2002.
+
+**Country has the lowest lifeExp in 2002 is Zambia**
+
+```{r}
+low_LifeExp_2002 <- gapminder %>% 
+  filter(year == "2002") %>% 
+  arrange(lifeExp)
+low_LifeExp_2002
+```
+
+> Find the lifeExp in Japan in 2002.
+
+**The lifeExp in Japan in 2002 is 82**
+
+```{r}
+japan_2002 <- gapminder %>% 
+  filter(year == "2002", country == "Japan")
+japan_2002
+```
+
+> Find the countries whose lifeExp is higher than 80 in 2002. How many are there?
+
+**Seven**
+
+```{r}
+higher_lifeExp_2002 <- gapminder %>% 
+  filter(year == "2002",lifeExp > 80 ) %>%
+arrange(lifeExp)
+higher_lifeExp_2002
+```
+
+> Find the lifeExp in Europe across the years. Which year is the highest lifeExp in Europe?
+
+**the highest lifeExp in Europe is 2007**
+
+```{r}
+europe_lifeExp_high = gapminder %>% 
+  filter(continent == "Europe") %>%
+arrange(desc(lifeExp))
+europe_lifeExp_high
+```
+
+> 8 Define gdp as it is equal to to gdpPercap \* pop/10000 . Find the gdp of Europe in 2002.
+
+```{r}
+gdp_europe <- gapminder %>%
+  filter(continent == 'Europe', year == '2002') %>%
+  mutate(gdp = gdpPercap * pop / 10000) %>%
+  arrange(desc(gdp))
+gdp_europe
+```
+
+> 9 Which country has the highest gdp in Europe in 2002?
+
+**The highest gdp in Europe in 2002 is Italy**
+
+```{r}
+high_gdp_europe <- gapminder %>% filter(year==2002, continent=="europe") %>% mutate(gdp=gdpPercap*pop/10000) %>% arrange(desc(gdp))
+high_gdp_europe
+
+gapminder %>% filter(year==2002, continent=="Europe") %>% mutate(gdp=gdpPercap*pop/10000) %>% arrange(desc(gdp))
+```
+
+> Save the data in 2002. Call it data_2002.
+
+```{r}
+save(data_2002,file ="data_2002.RData")
+```
+
+> Use data_2002. Use ggplot. Plot gdpPercap vs lifeExp.
+
+```{r}
+ggplot(data_2002,aes(x= gdpPercap, y=lifeExp )) +
+  geom_line()
+```
+
+> Use data_2002. Use ggplot. Plot gdpPercap vs lifeExp by continent (color)
+
+```{r}
+ggplot(data_2002, aes(x= gdpPercap, y=lifeExp, color = continent )) +
+ geom_line()
+```
+
+> Use data_2002. Use ggplot. Plot gdpPercap vs lifeExp by continent and pop (color and size)
+
+```{r}
+ggplot(data_2002, aes(x= gdpPercap, y=lifeExp, color = continent, size = pop)) +
+ geom_point(size = 2)
+
+```
+
+> Get data for Europe in 2002. Call it data_Europe
+
+```{r}
+data_Europe <- gapminder %>% 
+  filter(year == "2002", continent == "Europe")
+data_Europe
+```
+
+> Use data_Europe. Use ggplot. Plot pop vs gdpPercap.
+
+```{r}
+ggplot(data_Europe, aes(x= pop, y=gdpPercap)) +
+ geom_line(size = 1)
+```
+
+> Use data_Europe. Use ggplot. Plot pop vs gdpPercap. Scale population by log10
+
+```{r}
+ggplot(data_Europe, aes(x= pop, y=gdpPercap )) +
+ geom_point(size=2)
+```
+
+> Use data_Europe. Use ggplot. Plot pop vs gdpPercap. Scale population by log10. Color the data by country.
+
+```{r}
+
+ggplot(data_Europe, aes(x= pop, y=gdpPercap, color = country )) +
+ geom_point(size = 4)
+```
+
+> Use data_Europe. Use ggplot. Plot pop vs gdpPercap. Scale population by log10. Color the data by country and size it by lifeExp.
+
+```{r}
+ggplot(data_Europe, aes(x= pop, y=gdpPercap, color = country, size = lifeExp)) +
+ geom_point()
+```
+
+> Save the data for Americas. Call it data_Americas.
+
+```{r}
+data_Americas <- gapminder %>% 
+  filter(year == "2002", continent == "Americas")
+data_Americas
+```
+
+> Use data_Americas. Plot year vs gdpPercap. Scale gdpPercap by log10. Color the data by country.
+
+```{r}
+ggplot(data_Americas, aes(x= pop, y=gdpPercap, color = country )) +
+ geom_point(size = 4)
+```
+
+
+```{r}
+library(fpp3)
+library(tidyverse)
+```
+
+
+#Here is a tsibble which is identical to the tourism tsibble
+#from the tsibble package.
+
+```{r}
+library(readxl)
+my_tourism <- tourism
+#View(my_tourism) ## To download as pdf, I have hide this command
+head(my_tourism)
+```
+
+
+```{r}
+library(readxl)
+library(tsibble)
+
+my_tourism <- tourism %>%
+  mutate(Quarter = yearquarter(Quarter)) %>%
+  as_tsibble(
+    index = Quarter,
+    key = c(Region, State, Purpose)
+  )
+
+my_tourism
+
+```
+
+
+> Find what combination of Region and Purpose had the maximum number of overnight trips on average.
+
+*Region: Sydney, Purpose: Visiting, Mean:747.27 **
+
+```{r}
+my_tourism %>%
+  as_tibble() %>%
+  group_by(Region, Purpose) %>%
+  summarise(avg_trips = mean(Trips)) %>%
+  ungroup() %>%
+  filter(avg_trips == max(avg_trips))
+
+```
+
+
+
+
+
+> Create a new tsibble which combines the Purposes and State,and just has total trips by State.
+
+```{r}
+state_tourism <- my_tourism %>%
+  group_by(State) %>%
+  summarise(Trips = sum(Trips)) %>%
+  ungroup()
+
+state_tourism
+```
+Plotting timeseries
+
+> Create plot for the timeseries of Bricks from the aus_production dataset
+
+```{r}
+library(ggplot2)
+
+autoplot(aus_production, Bricks) +
+  ggtitle("Time series Bricks from Australia_Production") +
+  theme(plot.title = element_text(hjust = 0.5))
+
+```
+
+
+> Create plot for the timeseries of Lynx from the pelt dataset
+
+```{r}
+
+library(ggplot2)
+
+autoplot(pelt, Lynx) +
+  ggtitle("Time series Lynx from pelt") +
+  theme(plot.title = element_text(hjust = 0.5))
+
+```
+
+
+> Create a plot of the timeseries of Close from gafa_stock dataset
+
+```{r}
+library(ggplot2)
+
+autoplot(gafa_stock, Close) +
+  ggtitle("Time series Close from gafa_stock") +
+  theme(plot.title = element_text(hjust = 0.5))
+
+```
+
+ACF AND GG
+
+> We have introduced the following functions:gg_lag, ACF. Use these functions to explore the following time series: Bricks from aus_production dataset. Where does the seasonality show up as peaks? What is the trend?
+
+**The presence of seasonality is evident at lags 1, 4, 8, 12, 16, and 20, where a positive upward trend is observed.  **
+
+```{r}
+aus_production %>%
+  gg_lag(Bricks)
+
+aus_production %>%
+  ACF(Bricks) %>%
+  autoplot()
+```
+
+
+You can compute the daily changes in the Google stock price in 2018 using the code below:
+
+```{r}
+dgoog <- gafa_stock %>%
+  filter(Symbol == "GOOG", year(Date) >= 2018) %>%
+  mutate(trading_day = row_number()) %>%
+  update_tsibble(index = trading_day, regular = TRUE) %>%
+  mutate(diff = difference(Close))
+```
+
+The tsibble needed re-indexing as trading happens irregularly. The new index is based only on trading days.
+
+
+> Use autoplot() and ACF(). Do you see white noise?
+
+**From the above lib used, I have notice some white noise in the graph **
+
+```{r}
+dgoog %>%
+  mutate(diff = difference(Close)) %>%
+  ACF(diff) %>%
+  autoplot()
+```
+
