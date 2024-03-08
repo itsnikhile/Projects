@@ -1,0 +1,197 @@
+---
+title: "Business Forcasting on Global Economy, Canadian Gas Utilization & Aus Retail Time Series "
+output:
+  pdf_document: default
+  html_document: default
+date: "10/28/2023"
+---
+
+### Nikhil Eatalpacka
+
+#### [neata1\@unh.newhaven.edu](mailto:neata1@unh.newhaven.edu){.email}
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+### Description: Economic indicators featured by the World Bank from 1960 to 2017.
+
+```{r}
+remove(list=ls())
+library(fpp3)
+library(tsibble)
+library(knitr)
+```
+
+We will be using the GDP information in the global_economy dataset.
+
+```{r}
+head(global_economy)
+```
+
+## PART 1
+
+> Plot the GDP per capita over time for 3 countries of your choice. Which countries did you choose? AND How has GDP per capita changed over time for these 3 countries?
+
+**I choose United States, China, India and Sure, Upon analyzing the plot, we can see that GDP per capita has steadily increased in the United States over the years. In contrast, China has witnessed rapid economic growth, resulting in a significant rise in GDP per capita, while India also exhibits an upward trend, indicating economic development and an increase in GDP per capita.**
+
+```{r}
+library(ggplot2)
+library(dplyr)
+
+# I choose United States, China, India
+countries_selected <- c("United States", "China", "India")
+
+# Filtering the data for the selected countries
+filtered_data <- global_economy %>%
+  filter(Country %in% countries_selected)
+
+# Creating a line plot
+ggplot(filtered_data, aes(x = Year, y = GDP, color = Country)) +
+  geom_line() +
+  labs(title = "GDP per Capita Over Time for Selected Countries",
+       x = "Year",
+       y = "GDP per Capita") +
+  scale_y_continuous(labels = scales::comma_format(accuracy = 1, scale = 1e-10))
+```
+
+> Out of ALL the countries in the dataset, which one had the highest GDP per capita in 2017? Filter and mutate the data as needed.
+
+**The highest GDP per capita in 2017 is World with a GDP of 8.073758e+13**
+
+```{r}
+library(dplyr)
+
+# Filter the data for the year 2017
+gdp_2017 <- global_economy %>%
+  filter(Year == 2017)
+
+# ReplacING NA values in the "GDP" and "Country" columns
+gdp_2017 <- gdp_2017 %>%
+  mutate(
+    GDP = ifelse(is.na(GDP), 0, GDP), # Replace NA in GDP with 0
+    Country = ifelse(is.na(Country), "NA", Country)  # Replace NA in Country with NA
+)
+
+# Find the country with the highest GDP per capita in 2017
+highest_gdp_country <- gdp_2017 %>%
+  filter(GDP == max(GDP))
+
+# Print the country with the highest GDP per capita
+print(highest_gdp_country) 
+
+```
+
+## PART 2.
+
+Use the canadian_gas data (monthly Canadian gas production in billions of cubic metres, January 1960 – February 2005).
+
+> Plot Volume using autoplot, gg_subseries, gg_season to look at the effect of changing seasonality over time. What do you observe with the seasonality?
+
+**The analysis reveals that the seasonality of monthly Canadian gas production has decreased over time. This reduction can be attributed to various factors, including technological advancements that improve gas production efficiency in the summer and a higher demand for gas during the summer months, mainly for air conditioning purposes. However, it is important to note that the decrease in seasonality is not consistent across all years, with some periods experiencing a more significant decrease than others, notably in the late 1970s and early 1980s. The seasonal plot confirms this trend by illustrating a diminishing amplitude of the seasonal component, indicating a less pronounced seasonal pattern over time. Overall, the findings suggest a notable decline in the seasonality of monthly Canadian gas production, likely influenced by a combination of technological advancements and changing demand patterns.**
+
+```{r}
+library(fpp3)
+
+canadian_gas %>% autoplot(Volume)
+
+# Subseries plot
+canadian_gas %>% gg_subseries(Volume) +
+  ggtitle("Subseries Plot of Monthly Canadian Gas Production") +
+  xlab("Month") +
+  ylab("Billions of cubic metres")
+
+# Seasonal plot
+canadian_gas %>% gg_season(Volume)
+
+```
+
+> Do an STL decomposition of the data. You will need to choose a seasonal window to allow for the changing shape of the seasonal component
+
+```{r}
+# Fit a Seasonal and Trend decomposition using STL model to the "Volume" series in the "canadian_gas" dataset
+fit <- canadian_gas %>%
+ model(STL(Volume)) %>%
+ components()
+
+# Plotting the decomposed series
+fit
+
+# Retrieve the names of the components in the decomposition
+names(fit)
+
+# Create an autoplot of the decomposition, visualizing the observed data and its components
+fit %>% autoplot()
+```
+
+> How does seasonal SHAPE change over time? Plot season_year using gg_season().
+
+**In my analysis, it is evident that until approximately 1990, there is a noticeable pattern of strong seasonality in Canadian gas production, with the highest volumes occurring during the winter months. Furthermore, the seasonality becomes more pronounced over time. However, after 1990, there is a shift in the seasonality pattern, potentially influenced by factors such as the month length towards the end of the series.**
+
+```{r}
+fit %>% gg_season(season_year)
+```
+
+> Can you produce a plausible seasonally adjusted series?
+
+**Based on the graph, it is not possible to produce a plausible seasonally adjusted series. The graph shows that the seasonality of the data has changed over time, and the magnitude of the seasonal variation is relatively small. This makes it difficult to develop a reliable model of the seasonal component of the data.**
+
+```{r}
+# 
+seasonal_adj <- fit$season_adjust
+
+# Plotting on the original series: Retrieve and save the seasonally adj series
+canadian_gas %>%
+autoplot(Volume) +
+autolayer(fit, season_adjust, col = "red")
+```
+
+## PART 3
+
+Aus Retail Time Series We will use aus_rail dataset Using the code below, get a series (it gets a series randomly by using sample() function):
+
+```{r}
+set.seed(1234567)
+
+myseries <- aus_retail %>%
+  filter(`Series ID` == sample(aus_retail$`Series ID`,1)) 
+
+head(myseries)
+# remover NA's in the series with below:
+myseries =  myseries %>% filter(!is.na(`Series ID`)) 
+nrow(myseries)
+
+# rename the column name  `Series ID` with MyRandomSeries
+rename(myseries, MyRandomSeries = `Series ID`)
+```
+
+> Run a linear regression of Turnover on its trend, by using TSLM() and trend() functions)
+
+```{r}
+# save the regression model results in "fit".
+fit = myseries %>% model(TSLM(Turnover~ trend()))
+report(fit)
+```
+
+> Forecast for next 3 years. What are the values for the next 3 years are they monthly values?
+
+**Yes, they are in monthly intervals of 36!**
+
+```{r}
+# since, data is monthly, we should take 12 months * 3 years = 36 months to forecast  
+fit %>% forecast(h=36)
+```
+
+> Autoplot the forecast with original data
+
+```{r}
+fit %>% forecast(h=36 )%>% autoplot(myseries)
+```
+
+> Get the residuals, does it satisfy requirements for white noise error terms? Hint: gg_tsresiduals()
+
+**The residuals of the original model do not satisfy the requirements for white noise error terms. To improve the model, it would be necessary to include a seasonal component in the model and to transform the model to make the residuals more normally distributed.**
+
+```{r}
+fit %>% gg_tsresiduals()
+```
