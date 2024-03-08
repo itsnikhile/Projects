@@ -1,0 +1,81 @@
+---
+title: "Support Vector Machines and Neural Networks"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(message = FALSE)
+knitr::opts_chunk$set(warning = FALSE)
+```
+
+***Purpose of this Project:***
+
+*This project involves building SVM and neural network regression models to answer a number of questions. We will use the Credit dataset that is part of the ISLR package.*
+
+**Loading required libraries:**
+```{r}
+library(ISLR)
+library(dplyr)
+library(glmnet)
+library(caret)
+```
+
+**Selecting required features:**
+```{r}
+
+library(dplyr)
+credit_Filtered = Credit[, c("Income", "Limit", "Rating", "Cards", "Age", "Balance")]
+summary(credit_Filtered)
+
+
+```
+
+
+**Building a linear SVM regression model to predict Sales based on all other attributes ("Income", "Limit", "Rating", "Cards", "Age", "Balance")):**
+```{r}
+
+set.seed(1203)
+SVM_Model<- train(Income~.,data=credit_Filtered,method="svmLinear",preProcess=c("center","scale"),tuneLength = 10)
+SVM_Model
+
+```
+*R square is 80.08%*
+
+**Customizing the search grid by checking the model’s performance for C parameter of 0.1,.5,1 and 10 using 2 repeats of 5-fold cross validation. **
+
+```{r}
+
+set.seed(1203)
+
+grid = expand.grid(C= c(0.1,0.5,1,10))
+
+trctrl <- trainControl(method = "repeatedcv", number = 5, repeats = 2)
+
+SVM_Model2 <- train(Income ~., data = credit_Filtered, method = "svmLinear",
+trControl=trctrl,
+preProcess = c("center", "scale"), tuneGrid = grid,
+tuneLength = 10)
+
+SVM_Model2
+```
+**Training a neural network model to predict Sales based on all other attributes ("Price", "Advertising", "Population", "Age", "Income" and "Education"). **
+```{r}
+Normalization <- preProcess(credit_Filtered[,1:4],method = c("center","scale"))
+Norm_data<-predict(Normalization,credit_Filtered)
+
+NNET_Model<- train(Income~.,data=Norm_data,method="nnet",linout=TRUE, trace = FALSE)
+NNET_Model
+```
+*R-square value with best hyperparameters( size=1) is 37.89.*
+
+**Consider the following input: (Limit = 9, Age = 76, Income = 110, Rating = 100, Cards = 1,  Balance = 100). Estimating Sales for this record using the above neuralnet model? **
+```{r}
+Input <- data.frame(Limit = 9, Age = 76, Income = 110, Rating = 100, Cards = 1,  Balance = 100)
+
+Prediction<- predict(NNET_Model,Input )
+Prediction
+```
+
+*Estimated Income: 4.669901*
