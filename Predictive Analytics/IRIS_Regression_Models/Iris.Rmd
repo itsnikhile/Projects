@@ -1,0 +1,221 @@
+---
+title: "IRIS Project - Regression"
+output:
+  pdf_document: default
+  pdf: default
+date: "2023-10-08"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tinytex)
+```
+
+### ** Load Libraries and Dataset**
+
+```{r}
+# Load required libraries
+library(caret)
+library(e1071)
+library(rpart)
+library(randomForest)
+library(ggplot2)
+
+# Load iris dataset
+data("iris")
+iris <- na.omit(iris)
+head(iris)
+summary(iris)
+```
+
+- Load necessary libraries: caret, e1071, rpart, randomForest, and ggplot2.
+- Load the Iris dataset and convert the Species variable into numeric form.
+- Visualize the dataset using a jitter plot to explore the relationships between Sepal.Length and other independent variables.
+
+### ** Data Preprocessing**
+
+```{r}
+# Convert the species into numeric
+iris$Species <- as.numeric(iris$Species)
+
+# Visualize the dataset
+# Load the required library for additional styling
+library(RColorBrewer)
+
+# Create a color palette for better visualization
+my_palette <- brewer.pal(4, "Set1")
+
+# Enhance the jitter plot for better visualization
+ggplot(iris, aes(x = Sepal.Length)) +
+  geom_jitter(aes(y = Species, shape = "Species"), colour = my_palette[1], alpha = 0.7, size = 3) +
+  geom_jitter(aes(y = Sepal.Width, shape = "Sepal Width"), colour = my_palette[2], alpha = 0.7, size = 3) +
+  geom_jitter(aes(y = Petal.Length, shape = "Petal Length"), colour = my_palette[3], alpha = 0.7, size = 3) +
+  geom_jitter(aes(y = Petal.Width, shape = "Petal Width"), colour = my_palette[4], alpha = 0.7, size = 3) +
+  
+  labs(x = "Sepal.Length", y = "Independent Variables", title = "Iris Dataset - Sepal Length vs Independent Variables") +
+  
+  # Style the plot with theme and legend
+  theme_minimal() +
+  theme(legend.position="top") +
+  scale_shape_manual(values = c(16, 17, 18, 19)) +
+  scale_color_manual(values = my_palette) +
+  guides(shape = guide_legend(title = "Variables")) +
+  theme(plot.title = element_text(hjust = 0.5))
+
+
+```
+
+- Split the data into training and testing sets (80-20 split).
+- Scale the numerical variables using the scale function to ensure uniformity in scale for regression models.
+
+```{r}
+# Split data into training and testing sets
+set.seed(123)
+train_index <- createDataPartition(iris$Sepal.Length, p = 0.8, list = FALSE)
+train_data <- iris[train_index, ]
+test_data <- iris[-train_index, ]
+
+train_data[, -1] <- scale(train_data[, -1])
+test_data[, -1] <- scale(test_data[, -1])
+```
+
+- Split the data into training and testing sets (80-20 split).
+- Scale the numerical variables using the scale function to ensure uniformity in scale for regression model
+
+```{r}
+# Scale the data
+preprocessParams <- preProcess(train_data, method = c("center", "scale"))
+scaled_train_data <- predict(preprocessParams, train_data)
+scaled_test_data <- predict(preprocessParams, test_data)
+```
+
+## Regression Models:
+
+### **Linear Regression**
+
+```{r}
+# Linear Regression
+lm_model <- lm(Sepal.Length ~ ., data = scaled_train_data)
+lm_pred <- predict(lm_model, newdata = scaled_test_data)
+lm_mse <- mean((lm_pred - scaled_test_data$Sepal.Length)^2)
+lm_rsquared <- summary(lm_model)$r.squared
+
+# Display the results
+cat("Linear Regression Model:\n")
+cat("Coefficients:\n", coef(lm_model), "\n")
+cat("Predictions:\n", head(lm_pred), "\n")
+cat("Mean Squared Error (MSE):", lm_mse, "\n")
+cat("R-squared:", lm_rsquared, "\n")
+```
+
+- Fit a linear regression model on the scaled training data.
+- Predict Sepal.Length on the scaled test data.
+- Calculate Mean Squared Error (MSE) and R-squared as evaluation metrics.
+
+### **Support Vector Regression (SVR)**
+
+```{r}
+svr_model <- svm(Sepal.Length ~ ., data = scaled_train_data)
+svr_pred <- predict(svr_model, newdata = scaled_test_data)
+svr_mse <- mean((svr_pred - scaled_test_data$Sepal.Length)^2)
+svr_rsquared <- cor(svr_pred, scaled_test_data$Sepal.Length)^2
+
+# Display the results
+cat("Support Vector Regression Model:\n")
+cat("Predictions:\n", head(svr_pred), "\n")
+cat("Mean Squared Error (MSE):", svr_mse, "\n")
+cat("R-squared:", svr_rsquared, "\n")
+```
+
+- Fit a Support Vector Regression (SVR) model on the scaled training data.
+- Predict Sepal.Length on the scaled test data.
+- Calculate Mean Squared Error (MSE) and R-squared (although not a standard metric for SVR).
+
+### **Polynomial Regression**
+
+```{r}
+# Polynomial regression (Unable to perform due to vector size and llimitation of machine)
+# Support vector regression
+svr_model <- svm(Sepal.Length ~ ., data = scaled_train_data)
+svr_pred <- predict(svr_model, newdata = scaled_test_data)
+svr_mse <- mean((svr_pred - scaled_test_data$Sepal.Length)^2)
+
+
+# Display the results
+cat("Support Vector Regression Model:\n")
+cat("Predictions:\n", head(svr_pred), "\n")
+cat("Mean Squared Error (MSE):", svr_mse, "\n")
+
+# Handle SVR R-squared separately
+if (is.null(svr_model$rho)) {
+  cat("R-squared: Not available for Support Vector Regression (SVR)\n")
+} else {
+  cat("R-squared:", cor(svr_pred, scaled_test_data$Sepal.Length)^2, "\n")
+}
+```
+
+- Attempted to fit a polynomial regression model of degree 2. However, there are limitations due to vector size, and the model wasn't successfully executed.
+
+### **Decision Tree Regression**
+
+```{r}
+dt_model <- rpart(Sepal.Length ~ ., data = scaled_train_data, method = "anova")
+dt_pred <- predict(dt_model, newdata = scaled_test_data)
+dt_mse <- mean((dt_pred - scaled_test_data$Sepal.Length)^2)
+dt_rsquared <- summary(dt_model)$dev
+
+# Display the results
+cat("Decision Tree Regression Model:\n")
+cat("Predictions:\n", head(dt_pred), "\n")
+cat("Mean Squared Error (MSE):", dt_mse, "\n")
+cat("R-squared:", dt_rsquared, "\n")
+```
+
+- Fit a decision tree regression model using the rpart package.
+- Predict Sepal.Length on the scaled test data.
+- Calculate Mean Squared Error (MSE) and R-squared.
+
+### **Random Forest Regression**
+
+```{r}
+rf_model <- randomForest(Sepal.Length ~ ., data = scaled_train_data)
+rf_pred <- predict(rf_model, newdata = scaled_test_data)
+rf_mse <- mean((rf_pred - scaled_test_data$Sepal.Length)^2)
+rf_rsquared <- cor(rf_pred, scaled_test_data$Sepal.Length)^2
+
+# Display the results
+cat("Random Forest Regression Model:\n")
+cat("Predictions:\n", head(rf_pred), "\n")
+cat("Mean Squared Error (MSE):", rf_mse, "\n")
+cat("R-squared:", rf_rsquared, "\n")
+```
+
+-   Fit a random forest regression model using the randomForest package.
+- Predict Sepal.Length on the scaled test data.
+- Calculate Mean Squared Error (MSE) and R-squared.
+
+### **8. Compare model performance**
+
+```{r}
+# Create data frame to compare R-squared values
+# Check the lengths of the vectors
+length(lm_rsquared)
+length(svr_rsquared)
+length(dt_rsquared)
+length(rf_rsquared)
+
+# Update the code to make sure all vectors have the same length
+rsquared_df <- data.frame(
+  Model = c("Linear Regression", "Support Vector Regression", "Decision Tree Regression", "Random Forest Regression"),
+  R_Squared = c(lm_rsquared, svr_rsquared, dt_rsquared, rf_rsquared)[0:4]  # Use [1:4] to select the first 4 elements
+)
+
+# Print the data frame
+print(rsquared_df)
+
+
+```
+
+-   Create a data frame to compare R-squared values of different regression models.
+- Display the R-squared values for Linear Regression, Support Vector Regression, Decision Tree Regression, and Random Forest Regression.
+
