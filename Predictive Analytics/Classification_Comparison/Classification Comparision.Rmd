@@ -1,0 +1,191 @@
+---
+title: "Classification Comparison"
+output:
+  pdf_document: default
+  html_document: default
+date: "2023-10-08"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+### **1. Load Libraries and Dataset**
+
+```{r}
+# Load required libraries
+library(caret)
+library(pROC)
+library(randomForest)
+
+# Load Voter_Data.csv dataset
+dataset <- read.csv('Voter_Data_9.csv')
+cdataset = dataset[1:8]
+new_dataset <- na.omit(cdataset)
+head(new_dataset)
+summary(new_dataset)
+```
+
+-   caret: Used for machine learning and classification tasks.
+-   pROC: Used for ROC analysis and performance metrics.
+-   randomForest: Required for building a random forest model.
+-   dataset: Reading the 'Voter_Data_9.csv' file into a data frame.
+-   cdataset: Creating a subset of the dataset by selecting columns 1 through 8. new_dataset: Removing rows with missing values.
+
+### **2. Data Preprocessing**
+
+```{r}
+dataset$Voted_Last_Election <- factor(dataset$Voted_Last_Election, levels = c(0, 1))
+trainIndex <- createDataPartition(dataset$Voted_Last_Election, p = 0.8, list = FALSE)
+training_set <- dataset[trainIndex, ]
+test_set <- dataset[-trainIndex, ]
+
+```
+
+-   Converting the 'Voted_Last_Election' column to a factor variable.
+-   Splitting the dataset into training and test sets.
+
+### **3. Logistic Regression**
+
+```{r}
+# Logistic Regression
+log_reg_model <- train(Voted_Last_Election ~ Age + Salary, data = training_set, method = "glm", family = "binomial")
+log_reg_pred <- predict(log_reg_model, newdata = test_set[, c("Age", "Salary")])
+log_reg_cm <- confusionMatrix(log_reg_pred, test_set$Voted_Last_Election, positive = "1")
+log_reg_accuracy <- log_reg_cm$overall["Accuracy"]
+log_reg_precision <- log_reg_cm$byClass["Precision"]
+log_reg_recall <- log_reg_cm$byClass["Recall"]
+log_reg_f1 <- log_reg_cm$byClass["F1"]
+log_reg_roc <- roc(as.numeric(as.character(test_set$Voted_Last_Election)), 
+                   as.numeric(as.character(log_reg_pred)))
+log_reg_auc <- auc(log_reg_roc)
+head(log_reg_auc)
+```
+
+-   Building a logistic regression model using the caret package.
+-   Making predictions, calculating confusion matrix, and performance metrics for logistic regression.
+
+### **4. Support Vector Machine (SVM)**
+
+```{r}
+svm_model <- train(Voted_Last_Election ~ Age + Salary, data = training_set, method = "svmRadial")
+svm_pred <- predict(svm_model, newdata = test_set[, c("Age", "Salary")])
+svm_cm <- confusionMatrix(svm_pred, test_set$Voted_Last_Election, positive = "1")
+svm_accuracy <- svm_cm$overall["Accuracy"]
+svm_precision <- svm_cm$byClass["Precision"]
+svm_recall <- svm_cm$byClass["Recall"]
+svm_f1 <- svm_cm$byClass["F1"]
+svm_roc <- roc(as.numeric(as.character(test_set$Voted_Last_Election)), 
+               as.numeric(as.character(svm_pred)))
+svm_auc <- auc(svm_roc)
+
+head(svm_auc)
+
+# Find the optimal number of neighbors
+folds <- createFolds(training_set$Voted_Last_Election, k = 10)
+grid <- expand.grid(k = seq(1, 20))
+ctrl <- trainControl(method = "cv", index = folds)
+knn_model <- train(Voted_Last_Election ~ Age + Salary, data = training_set, method = "knn", tuneGrid = grid, trControl = ctrl)
+k_opt <- knn_model$bestTune$k
+print(k_opt)
+```
+
+-   Building an SVM model using radial kernel.
+
+### **5. k-Nearest Neighbors (KNN)**
+
+```{r}
+knn_model <- train(Voted_Last_Election ~ Age + Salary, data = training_set, method = "knn", tuneGrid = data.frame(k = k_opt))
+knn_pred <- predict(knn_model, newdata = test_set[, c("Age", "Salary")])
+knn_cm <- confusionMatrix(knn_pred, test_set$Voted_Last_Election, positive = "1")
+knn_accuracy <- knn_cm$overall["Accuracy"]
+knn_precision <- knn_cm$byClass["Precision"]
+knn_recall <- knn_cm$byClass["Recall"]
+knn_f1 <- knn_cm$byClass["F1"]
+knn_roc <- roc(as.numeric(as.character(test_set$Voted_Last_Election)), 
+               as.numeric(as.character(knn_pred)))
+knn_auc <- auc(knn_roc)
+head(knn_auc)
+```
+
+-   Determining the optimal number of neighbors (k) using cross-validation.
+-   Building a KNN model and evaluating its performance.
+
+### **6. Decision Tree**
+
+```{r}
+dt_model <- train(Voted_Last_Election ~ Age + Salary, data = training_set, method = "rpart")
+dt_pred <- predict(dt_model, newdata = test_set[, c("Age", "Salary")])
+dt_cm <- confusionMatrix(dt_pred, test_set$Voted_Last_Election, positive = "1")
+dt_accuracy <- dt_cm$overall["Accuracy"]
+dt_precision <- dt_cm$byClass["Precision"]
+dt_recall <- dt_cm$byClass["Recall"]
+dt_f1 <- dt_cm$byClass["F1"]
+dt_roc <- roc(as.numeric(as.character(test_set$Voted_Last_Election)), 
+              as.numeric(as.character(dt_pred)))
+dt_auc <- auc(dt_roc)
+head(dt_auc)
+```
+
+-   Building a decision tree model using the rpart method.
+
+### **7. Random Forest**
+
+```{r}
+rf_model <- randomForest(Voted_Last_Election ~ Age + Salary, data = training_set)
+rf_pred <- predict(rf_model, newdata = test_set[, c("Age", "Salary")])
+rf_cm <- confusionMatrix(rf_pred, test_set$Voted_Last_Election, positive = "1")
+rf_accuracy <- rf_cm$overall["Accuracy"]
+rf_precision <- rf_cm$byClass["Precision"]
+rf_recall <- rf_cm$byClass["Recall"]
+rf_f1 <- rf_cm$byClass["F1"]
+rf_roc <- roc(as.numeric(as.character(test_set$Voted_Last_Election)), 
+              as.numeric(as.character(rf_pred)))
+rf_auc <- auc(rf_roc)
+head(rf_auc)
+```
+
+-   Building a random forest model using the randomForest package.
+
+### **8. Compare model performance**
+
+```{r}
+models <- c("Logistic Regression", "SVM", "KNN", "Decision Tree", "Random Forest")
+accuracy <- c(log_reg_accuracy, svm_accuracy, knn_accuracy, dt_accuracy, rf_accuracy)
+precision <- c(log_reg_precision, svm_precision, knn_precision, dt_precision, rf_precision)
+recall <- c(log_reg_recall, svm_recall, knn_recall, dt_recall, rf_recall)
+f1 <- c(log_reg_f1, svm_f1, knn_f1, dt_f1, rf_f1)
+roc <- c(log_reg_auc, svm_auc, knn_auc, dt_auc, rf_auc)
+
+model_performance <- data.frame(models, accuracy, precision, recall, f1, roc)
+model_performance
+head(model_performance)
+```
+
+-   Comparing model performance based on accuracy, precision, recall, F1 score, and ROC AUC.
+-   Storing the results in a data frame.
+
+### **9. Visualization of model performance**
+
+```{r}
+# Load required libraries
+library(ggplot2)
+library(dplyr)
+
+# Create a color palette for better visual appeal
+color_palette <- c("#1f78b4", "#33a02c", "#e31a1c", "#ff7f00", "#6a3d9a")
+
+# Visualization of model performance with error bars
+ggplot(model_performance, aes(x = models, y = accuracy, fill = models)) +
+  geom_col(position = "dodge", width = 0.7, color = "black") +
+  geom_errorbar(aes(ymin = accuracy - 0.02, ymax = accuracy + 0.02),
+                position = position_dodge(0.7), width = 0.25) +
+  labs(x = "Model", y = "Accuracy", title = "Model Performance") +
+  theme_minimal() +
+  theme(legend.position = "top", legend.title = element_blank()) +
+  scale_fill_manual(values = color_palette) +
+  coord_flip()  # Flipping the coordinates for a horizontal bar plot
+
+```
+
+-   Creating a dodged bar chart to visually compare the accuracy of different models.
