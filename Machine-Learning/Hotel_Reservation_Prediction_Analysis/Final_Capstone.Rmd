@@ -1,0 +1,258 @@
+---
+title: 'CAPSTONE: Predicting Customer Reservation Cancellation'
+author: "Nikhil Eatalpacka"
+output:
+  html_document: default
+  pdf_document: default
+date: "2024-04-29"
+---
+
+## Group Members:
+
+-   **Nikhil Eatalpacka**
+-   **Chandra Sekar Posa**
+-   **Kaushik Jetty**
+
+## Analyzing the Hotel Reservations Dataset: Predicting Customer Reservation Cancellation
+
+### Introduction
+
+#### In this analysis, we aim to predict customer reservation cancellations using the hotel reservations dataset. We will explore various features such as booking lead time, customer demographics, and booking trends to build predictive models.
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+```{r}
+# Running libraries
+library(dplyr)
+library(tidyr)
+library(ggplot2)
+```
+
+```{r}
+# Loading the dataset to data set by using read_csv, with the first 10 rows visible.
+data <-read.csv("hotel_booking.csv")
+head(data, 10)
+```
+
+```{r}
+# Total no of observations
+dim(data)
+```
+
+```{r}
+# Select specific columns from the dataframe 'data' and store them in 'selected_columns'.
+selected_columns <- data[, c(1,4,5,7,9:12,17:23,26)]
+head(selected_columns, 5)
+```
+
+```{r}
+# Assign the dataframe 'selected_columns' to a new variable 'data1'.
+data1 <- selected_columns
+
+# Check if there are any missing values in 'data1' and store the result in 'any_null'.
+any_null <- any(is.na(data1))
+
+# Print the result of the check for missing values.
+print(any_null)
+```
+
+```{r}
+# Remove rows containing missing values from 'data1' and store the cleaned data in 'clean_data'.
+clean_data <- drop_na(data1)
+
+# Assign the cleaned dataframe 'clean_data' to a new variable 'data2'.
+data2 <- clean_data
+```
+
+```{r}
+library(lubridate)
+# Load the 'lubridate' package for date manipulation.
+```
+
+```{r}
+# Convert month names to month numbers and store them in a new column 'Month_Num' in 'data2'.
+data2$Month_Num <- match(tolower(data2$arrival_date_month), tolower(month.name))
+
+# Print the updated dataframe 'data2'.
+print(data2)
+```
+
+```{r}
+# Combine day, month, and year into a single string format and store it in a new column 'date_string' in 'data2'.
+data2$date_string <- paste(data2$arrival_date_year, data2$Month_Num, data2$arrival_date_day_of_month, sep = "-")
+
+# Convert the combined string in 'date_string' to Date format and store it in a new column 'Date' in 'data2'.
+data2$Date <- as.Date(data2$date_string)
+
+# Print the updated dataframe 'data2'.
+print(data2)
+```
+
+```{r}
+# Count the number of bookings per date and store the result in 'daily_booking_counts'.
+daily_booking_counts <- table(data2$Date)
+
+# Convert the result to a dataframe and assign column names.
+daily_booking_counts_df <- as.data.frame(daily_booking_counts)
+names(daily_booking_counts_df) <- c("Date", "Booking_Count")
+
+# Print the dataframe 'daily_booking_counts_df'.
+print(daily_booking_counts_df)
+```
+
+```{r}
+# Plot the number of bookings per date.
+plot(daily_booking_counts_df$Date, daily_booking_counts_df$Booking_Count, 
+     type = "l", xlab = "Date", ylab = "Number of Bookings",
+     main = "Number of Bookings per Date")
+```
+
+```{r}
+daily_booking_counts_df$Date <- as.Date(daily_booking_counts_df$Date)
+# Convert the 'Date' column to Date object.
+```
+
+```{r}
+# Aggregate data by month to get monthly booking counts.
+monthly_booking_counts <- daily_booking_counts_df %>%
+  mutate(Month = floor_date(Date, "month")) %>%
+  group_by(Month) %>%
+  summarise(Booking_Count = sum(Booking_Count))
+
+# Print the dataframe 'monthly_booking_counts'.
+print(monthly_booking_counts)
+```
+
+```{r}
+# Fit a linear regression model.
+lm_model <- lm(Booking_Count ~ Month, data = monthly_booking_counts)
+
+# Print summary of the linear regression model.
+summary(lm_model)
+```
+
+```{r}
+
+# Set smaller margins for plotting.
+par(mar = c(5, 4, 4, 2) + 0.1)
+
+# Open a new plotting device with smaller size and save plot as PNG.
+png("monthly_bookings_plot.png", width = 800, height = 600)
+
+# Plot the monthly booking counts.
+plot(monthly_booking_counts$Month, monthly_booking_counts$Booking_Count, 
+     type = "l", xlab = "Month", ylab = "Number of Bookings",
+     main = "Number of Bookings per Month")
+
+# Add the linear regression line to the plot.
+abline(lm_model, col = "red")
+
+# Save and close the plotting device.
+dev.off()
+```
+
+```{r}
+# Make predictions using the linear regression model.
+predicted <- predict(lm_model, newdata = monthly_booking_counts)
+print(predicted)
+```
+
+```{r}
+# Calculate residuals.
+residuals <- monthly_booking_counts$Booking_Count - predicted
+print(residuals)
+```
+
+```{r}
+# Square the residuals.
+squared_residuals <- residuals^2
+print(squared_residuals)
+```
+
+```{r}
+# Calculate mean of squared residuals.
+mean_squared_residuals <- mean(squared_residuals)
+print(mean_squared_residuals)
+```
+
+```{r}
+# Calculate RMSE.
+rmse <- sqrt(mean_squared_residuals)
+print(rmse)
+
+# Print RMSE.
+print(paste("RMSE:", round(rmse, 2)))
+
+```
+
+```{r}
+# Load necessary libraries
+library(dplyr)
+library(ggplot2)
+```
+
+```{r}
+# Descriptive Analysis
+summary(data2$adults)
+summary(data2$children)
+summary(data2$babies)
+summary(data2$stays_in_week_nights)
+```
+
+```{r}
+# Visualization
+# Histogram for number of adults
+ggplot(data2, aes(x = adults)) +
+  geom_histogram(binwidth = 1, fill = "skyblue", color = "black") +
+  labs(title = "Distribution of Number of Adults", x = "Number of Adults", y = "Frequency")
+
+# Histogram for number of children
+ggplot(data2, aes(x = children)) +
+  geom_histogram(binwidth = 1, fill = "lightgreen", color = "black") +
+  labs(title = "Distribution of Number of Children", x = "Number of Children", y = "Frequency")
+
+# Histogram for number of babies
+ggplot(data2, aes(x = babies)) +
+  geom_histogram(binwidth = 1, fill = "lightcoral", color = "black") +
+  labs(title = "Distribution of Number of Babies", x = "Number of Babies", y = "Frequency")
+
+# Histogram for number of stays in week nights
+ggplot(data2, aes(x = stays_in_week_nights)) +
+  geom_histogram(binwidth = 1, fill = "lightcoral", color = "black") +
+  labs(title = "Distribution of Number of Stays in Week Nights", x = "Number of Stays in Week Nights", y = "Frequency")
+```
+
+```{r}
+# Correlation Analysis
+correlation_matrix <- cor(data2[, c("adults", "children", "babies", "stays_in_week_nights")])
+print(correlation_matrix)
+```
+
+```{r}
+# Regression Analysis
+lm_model <- lm(stays_in_week_nights ~ adults + children + babies, data = data2)
+summary(lm_model)
+```
+
+```{r}
+# Segmentation Analysis (Example: by number of children)
+segment_summary <- data2 %>%
+  group_by(children) %>%
+  summarise(mean_stays_in_week_nights = mean(stays_in_week_nights),
+            median_stays_in_week_nights = median(stays_in_week_nights))
+print(segment_summary)
+```
+
+```{r}
+# Outlier Detection (Example: using boxplot)
+boxplot(data2$stays_in_week_nights, main = "Boxplot of Number of Stays in Week Nights")
+```
+
+```{r}
+# Validation (Example: using cross-validation)
+# (Code for cross-validation would depend on the specific validation technique you want to use)
+```
